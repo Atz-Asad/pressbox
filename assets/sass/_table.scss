@@ -1,0 +1,36 @@
+/***************************/
+/******** Table CSS *******/
+/*************************/
+.table{
+   --#{$prefix}table-color: var(--#{$prefix}white);
+   --#{$prefix}table-bg: transparent;
+   td{
+      padding: 14px 20px;
+   }
+   tbody{
+      tr{
+         &:nth-child(even){
+            background: #249DEE;
+         }
+      }
+   }
+}
+
+.table-row{
+   display: flex;
+   gap: 30px;
+   justify-content: space-between;
+}
+.devider{
+   position: relative;
+
+   &::after{
+      position: absolute;
+      content: "";
+      right: -3px;
+      top: 15px;
+      height: 1px;
+      width: 10px;
+      background: var(--#{$prefix}white);
+   }
+}

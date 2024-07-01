@@ -1,0 +1,40 @@
+  /**************************/
+ /******** forms CSS ********/
+/**************************/
+
+
+form{
+    .icon-star{
+        color: var(--#{$prefix}primary);
+        font-size: 12px;
+    }
+}
+// Contact Form
+.contact-form{
+    .textarea{
+        height: 200px;
+    }
+    label{
+        color: rgba(var(--#{$prefix}heading-color-rgb), 0.7);
+    }
+}
+.contact-form-wrapper{
+    .subtitle{
+        color: rgba(var(--#{$prefix}heading-color-rgb), 0.82);
+    }
+    .title{
+        color: rgba(var(--#{$prefix}heading-color-rgb), 0.82);
+    }
+
+}
+
+// comment Form
+.comment-form{
+    textarea{
+        height: 245px;
+        @include media-breakpoint-down(md) {
+            height: 200px;
+            margin-bottom: 20px;
+        }
+    }
+}

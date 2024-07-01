@@ -1,0 +1,279 @@
+  /****************************/
+ /******** buttons CSS *******/
+/****************************/
+.btn-primary{
+   --#{$prefix}btn-bg: var(--#{$prefix}primary);
+   --#{$prefix}btn-border-color: var(--#{$prefix}primary);
+   --#{$prefix}btn-hover-bg: transparent;
+   --#{$prefix}btn-active-bg: transparent;
+   --#{$prefix}btn-hover-color: var(--#{$prefix}primary);
+   --#{$prefix}btn-hover-border-color: var(--#{$prefix}primary);
+   --#{$prefix}btn-active-color: var(--#{$prefix}primary);
+}
+.btn-outline-primary{
+   --#{$prefix}btn-color: var(--#{$prefix}primary);
+   --#{$prefix}btn-border-color: var(--#{$prefix}primary);
+   --#{$prefix}btn-hover-bg: var(--#{$prefix}primary);
+   --#{$prefix}btn-hover-border-color: var(--#{$prefix}primary);
+}
+
+.btn-link{
+   --#{$prefix}btn-font-weight: #{$btn-font-weight};
+}
+// .btn-sm{
+//    --#{$prefix}btn-hover-color: var(--#{$prefix}primary);
+//    --#{$prefix}btn-border-color: var(--#{$prefix}primary);
+//    --#{$prefix}btn-hover-border-color: var(--#{$prefix}primary);
+// }
+.btn-sm-2{
+   --#{$prefix}btn-hover-color: var(--#{$prefix}white);
+   --#{$prefix}btn-border-color: var(--#{$prefix}primary);
+   --#{$prefix}btn-hover-border-color: var(--#{$prefix}primary);
+   --#{$prefix}btn-hover-bg: var(--#{$prefix}primary);
+}
+.btn-secondary{
+   --#{$prefix}btn-bg: var(--#{$prefix}secondary);
+   --#{$prefix}btn-border-color: var(--#{$prefix}secondary);
+   --#{$prefix}btn-hover-bg:  var(--#{$prefix}primary);
+   --#{$prefix}btn-color: var(--#{$prefix}white);
+   --#{$prefix}btn-hover-border-color: var(--#{$prefix}primary);
+}
+.btn-light{
+   --#{$prefix}btn-bg:  var(--#{$prefix}white);
+   --#{$prefix}btn-boder-color:  var(--#{$prefix}primary);
+   --#{$prefix}btn-color: var(--#{$prefix}primary);
+   --#{$prefix}btn-hover-bg: transparent;
+   --#{$prefix}btn-hover-border-color: var(--#{$prefix}white);
+   --#{$prefix}btn-hover-color: var(--#{$prefix}white);
+   --#{$prefix}btn-active-bg: var(--#{$prefix}white);
+}
+.btn-outline-light{
+   --#{$prefix}btn-bg: transparent;
+   --#{$prefix}btn-boder:  var(--#{$prefix}white);
+   --#{$prefix}btn-color: var(--#{$prefix}primary);
+   --#{$prefix}btn-hover-bg: var(--#{$prefix}white);
+}
+
+.slide-btn{
+   color: var(--#{$prefix}border-color);
+   border: 1px solid var(--#{$prefix}border-color);
+   font-size: 14px;
+   height: 25px;
+   width: 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 4px;
+   transition: all 0.3s ease ;
+   &:hover{
+      background: var(--#{$prefix}primary);
+      color: var(--#{$prefix}white);
+   }
+}
+.breaking-news-buttons {
+   position: absolute;
+   z-index: 2;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 0;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   // background: var(--#{$prefix}body-bg);
+}
+
+.video-icon{
+   position: absolute;
+   background: rgba(0, 0, 0, 0.5);
+   color: var(--#{$prefix}white);
+   text-decoration: none;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   height: 60px;
+   width: 60px;
+   font-size: 40px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   animation: pulse 1.5s linear infinite;
+}
+
+.video-icon-small {
+   position: absolute;
+   background: rgba(0, 0, 0, 0.5);
+   color: var(--#{$prefix}white);
+   text-decoration: none;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   height: 24px;
+   width: 24px;
+   font-size: 12px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   animation: pulse-small 1.5s linear infinite;
+   z-index: 1;
+   i{
+      margin-left:2px ;
+    }
+}
+
+/* #Progress Back to Top
+================================================== */
+// .progress-wrap {
+// 	position: fixed;
+// 	right: 20px;
+// 	bottom: 20px;
+// 	height: 46px;
+// 	width: 46px;
+// 	cursor: pointer;
+// 	display: block;
+// 	border-radius: 50px;
+// 	z-index: 999999;
+// 	opacity: 0;
+// 	visibility: hidden;
+// 	transform: translateY(15px);
+// 	-webkit-transition: all 200ms linear;
+//    transition: all 200ms linear;
+//    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+//    svg{
+//      fill: rgba(var(--#{$prefix}primary-rgb), 0.82);
+//    }
+// }
+// .progress-wrap:hover{
+//    box-shadow: 0px 0px 15px rgba(var(--#{$prefix}primary-rgb), 0.9);
+// }
+// .progress-wrap.active-progress {
+// 	opacity: 1;
+// 	visibility: visible;
+// 	transform: translateY(0);
+// }
+// .progress-wrap::after {
+// 	position: absolute;
+// 	font-family: "Font Awesome 6 Pro";
+// 	content: "\f062";
+// 	text-align: center;
+// 	line-height: 46px;
+// 	font-size: 18px;
+// 	color: var(--#{$prefix}white);
+// 	left: 0;
+// 	top: 0;
+// 	height: 46px;
+// 	width: 46px;
+// 	cursor: pointer;
+// 	display: block;
+// 	z-index: 1;
+// 	-webkit-transition: all 200ms linear;
+//    transition: all 200ms linear;
+// }
+// .progress-wrap svg.progress-circle path {
+// 	stroke: var(--#{$prefix}heading-color);
+// 	stroke-width: 5;
+// 	box-sizing:border-box;
+// 	-webkit-transition: all 200ms linear;
+//    transition: all 200ms linear;
+// }
+
+.btn-back-to-top{
+   position: fixed;
+	right: 20px;
+	bottom: 10px;
+	height: 34px;
+	width: 34px;
+	cursor: pointer;
+	display: block;
+	z-index: 99;
+   transition: all 200ms linear;
+   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+   background: rgba(var(--#{$prefix}primary-rgb), 0.60);
+   text-align: center;
+   line-height: 34px;
+   text-decoration: none;
+   visibility: hidden;
+   opacity: 0;
+   i{
+      font-size: 8px;
+      color: var(--#{$prefix}white);
+   }
+}
+.btn-back-to-top.show{
+   visibility: visible;
+   opacity: 1;
+   bottom: 30px;
+}
+
+/* =================================
+======== Dark light Mode ===========
+==================================== */
+.darklight-mode-toggle{
+   bottom: 80px;
+   right: 20px;
+   z-index: 99;
+   .dropdown-toggle{
+      background: rgba(var(--#{$prefix}primary-rgb), 0.82);
+      border: none;
+      padding: 5px 9px;
+      transition: all 0.4s ease;
+      svg{
+         fill: var(--#{$prefix}white);
+      }
+      &:hover{
+         box-shadow: 0px 0px 15px rgba(var(--#{$prefix}primary-rgb), 0.9);
+      }
+      &:focus{
+         box-shadow: none;
+      }
+   }
+   .dropdown-toggle::after{
+      display: none;
+   }
+   .dropdown-menu{
+      --#{$prefix}dropdown-min-width: 130px;
+      background:rgba(var(--#{$prefix}body-bg-rgb), 0.2);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      .dropdown-item{
+         --#{$prefix}dropdown-item-padding-y: 6.5px;
+         --#{$prefix}dropdown-item-padding-x: 10px;
+         background:rgba(var(--#{$prefix}body-bg-rgb), 0.2);
+         color: var(--#{$prefix}heading-color);
+         
+         font-size: 14px;
+         font-weight: 400;
+         transition: all 0.4s ease;
+         text-indent: -9999px;
+         svg{
+            fill: var(--#{$prefix}heading-color);
+            transition: all 0.4s ease;
+         }
+         &:hover{
+            background: var(--#{$prefix}primary);
+            color: var(--#{$prefix}white);
+            svg{
+               fill: var(--#{$prefix}white);
+               opacity: 1;
+            }
+         }
+      }
+      .dropdown-item.active{
+         background: var(--#{$prefix}primary);
+         color: var(--#{$prefix}white);
+         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+         text-indent: 1px;
+         svg{
+            fill: var(--#{$prefix}white);
+            opacity: 1;
+         }
+      }
+   }
+
+   .dropdown-menu.show{
+      display: flex;
+      align-items: center;
+      inset: 50% 44px auto auto !important;
+      transform: translateY(-50%) !important;
+   }
+}

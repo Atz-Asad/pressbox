@@ -1,0 +1,23 @@
+  /*******************************/
+ /******** Accordion CSS ********/
+/*******************************/
+// .accordion{
+//     border-radius: 0border-radius;
+// }
+.accordion-button {
+    padding: 14px 20px;
+    // border-bottom: 1px solid var(--#{$prefix}border-color);
+    box-shadow: none;
+    &:not(.collapsed) {
+      background-color: var(--#{$prefix}body-bg);
+      color: var(--#{$prefix}heading-color);
+      box-shadow: none;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+}
+
+.accordion-body{
+    padding: 30px 20px;
+}

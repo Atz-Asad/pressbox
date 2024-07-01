@@ -1,0 +1,72 @@
+#customizer-form .number {
+  width: 100px;
+}
+#customizer-form .accordion {
+  --bs-accordion-btn-padding-x: 0;
+  --bs-accordion-body-padding-x: 0;
+  --bs-accordion-border-width: 1px;
+  --bs-accordion-border-color: rgba( var(--bs-primary-rgb), .2 );
+  --bs-accordion-btn-bg: transparent;
+  --bs-accordion-bg: transparent;
+  --bs-accordion-active-bg: transparent;
+}
+#customizer-form .accordion .accordion-button {
+  border: none;
+  font-weight: 700;
+}
+#customizer-form .accordion .accordion-button:after {
+  content: var(--bs-accordion-btn-active-icon);
+}
+#customizer-form .accordion .accordion-button.collapsed:after {
+  content: var(--bs-accordion-btn-icon);
+}
+#customizer-form .accordion-header {
+  border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+}
+#customizer-form .accordion-body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: var(--bs-accordion-btn-padding-y);
+}
+#customizer-form textarea {
+  font-size: 10px;
+  min-height: 120px;
+}
+#customizer-form .cursor-pointer {
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: var(--bg-color, var(--bs-primary));
+  color: #fff;
+  padding: 0 14px;
+  min-width: 50px;
+}
+#customizer-form .cursor-pointer.rounded {
+  --bs-border-radius: 8px;
+}
+#customizer-form .cursor-pointer.default {
+  --bg-color: linear-gradient( to right, #0F90E6 0%,#0F90E6 50%, #0F90E6 50%, #0F90E6 100% );
+}
+#customizer-form .cursor-pointer.preset1 {
+  --bg-color: linear-gradient( to right, #ff0000 0%, #ff0000 50%, #ff0000 50%, #ff0000 100% );
+}
+#customizer-form .cursor-pointer.preset2 {
+  --bg-color: linear-gradient( to right, #47A992 0%, #47A992 50%, #47A992 50%, #47A992 100% );
+}
+#customizer-form .cursor-pointer.preset3 {
+  --bg-color: linear-gradient( to right, #9f0592 0%, #9f0592 50%, #9f0592 50%, #9f0592 100% );
+}
+#customizer-form .cursor-pointer.preset4 {
+  --bg-color: linear-gradient( to right, #BABD00 0%, #BABD00 50%, #BABD00 50%, #BABD00 100% );
+}
+#customizer-form .cursor-pointer.blackwhite {
+  --bg-color: linear-gradient( to right, #fff 0%,#fff 50%, #000 50%, #000 100% );
+}
+#customizer-form .color-presets > span {
+  text-indent: -99999px;
+  border: 1px solid #000;
+}
+
+/*# sourceMappingURL=color.css.map */

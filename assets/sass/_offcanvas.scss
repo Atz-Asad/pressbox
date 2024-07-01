@@ -1,0 +1,71 @@
+
+/*******************************/
+/******** offcanvas CSS *******/
+/*****************************/
+.offcanvas-sidebar-menu{
+    .nav-item{
+        width: 100%;
+        .dropdown-menu{
+            width: 100%;
+        }
+    }
+    .nav-link{
+        color: var(--#{$prefix}body-color);
+        .dropdown-item{
+            color: var(--#{$prefix}body-color);
+        }
+    }
+    .nav-link.dropdown-toggle{
+        position: relative;
+        // color: var(--#{$prefix}body-color);
+        &::after {
+            content: "\e931";
+            padding: 0 0px 0 10px;
+            font-family: "icomoon";
+            border: none;
+            font-size: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            right: 0px;
+            left: inherit;
+        }
+        &:hover{
+            color: var(--#{$prefix}primary);
+        }
+    }
+    .nav-link.dropdown-toggle.show{
+        position: relative;
+        &::after {
+            content: "\e930";
+            padding: 0;
+            font-family: "icomoon";
+            border: none;
+            font-size: 3px;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            right: 0px;
+            left: inherit;
+        }
+    }
+    background-color:  var(--#{$prefix}body-bg);
+}
+
+.offcanvas-body::-webkit-scrollbar {
+    width: 5px;
+}  
+.offcanvas-body::-webkit-scrollbar {
+    width: 8px;
+}
+.offcanvas-body::-webkit-scrollbar-thumb {
+    background-color: #777E90;
+    border-radius: 10px;
+}
+.offcanvas-body::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Change this to the desired background color */
+    border-radius: 10px;
+}
+.offcanvas-body::-webkit-scrollbar-thumb:hover {
+    background: var(--#{$prefix}primary);
+}

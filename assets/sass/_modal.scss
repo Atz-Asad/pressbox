@@ -1,0 +1,161 @@
+  /****************************/
+ /******** modal CSS *******/
+/****************************/
+
+
+.modal-header{
+   border-bottom:  0;
+}
+.modal-content{
+   padding: 30px;
+   --#{$prefix}modal-border-width: 0px;
+   --#{$prefix}modal-border-radius: 0;
+   --#{$prefix}modal-width: 400px;
+   a{
+      text-decoration: none;
+   }
+   .form-control {
+      display: block;
+      width: 100%;
+      padding: 0.5rem 1rem;
+      font-size: 14px;
+   }
+   .btn{
+      // width: 100%;
+      --#{$prefix}btn-padding-y: 8px;
+      font-size: 14px;
+      font-weight: 600;
+   }
+   .recent-search-title{
+      color: #A6A6A6;
+      transition: all 0.3s ease;
+      &:hover{
+         background: var(--#{$prefix}primary);
+         color: var(--#{$prefix}white);
+      }
+      a{
+         color: currentColor;
+      }
+
+      .icon-close {
+         cursor: pointer;
+      }
+   }
+}
+
+.close-icon{
+   background: var(--#{$prefix}primary);
+   border: 1px solid var(--#{$prefix}primary);
+   color: var(--#{$prefix}white);
+   border-radius: 50%;
+   text-decoration: none;
+   height: 30px;
+   width: 30px;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   font-size: 12px;
+   transition: all 0.3s ease;
+   &:hover{
+      background: transparent;
+      color: var(--#{$prefix}primary);
+   }
+}
+
+// gallery popup css
+.vbox-close{
+   cursor: pointer;
+   position: fixed;
+   top: 25px;
+   right: 40px;
+   z-index: 99;
+   padding: 10px 10px;
+   color: var(--#{$prefix}white);
+   border: 0;
+   font-size: 24px;
+   display: flex;
+   align-items: center;
+   opacity: 1;
+   transition: all 0.3s ease;
+   background: var(--#{$prefix}primary);
+   border: 1px solid var(--#{$prefix}primary);
+   border-radius: 50%;
+   font-size: 18px;
+   &:hover{
+      background: transparent;
+      color: var(--#{$prefix}primary);
+   }
+}
+
+.vbox-left-corner {
+   cursor: pointer;
+   position: fixed;
+   left: 0;
+   top: 0;
+   overflow: hidden;
+   line-height: 1;
+   font-size: 20px;
+   z-index: 99;
+   display: flex;
+   align-items: center;
+   color: var(--#{$prefix}white);
+   background: var(--#{$prefix}primary);
+}
+
+.vbox-share{
+   bottom: 30px;
+   color: var(--#{$prefix}white);
+   background: var(--#{$prefix}primary);
+   position: fixed;
+}
+
+.vbox-title {
+   position: fixed;
+   font-size: 26px;
+   color: var(--#{$prefix}white);
+   background: rgba(0,0,0,.50);
+   width: var(--vbox-title-width);
+   border-radius: var(--vbox-title-radius);
+   padding: 12px 54px;
+   height: max-content;
+   left: 0 !important;
+   top: calc(calc(100% - 70px)) !important;
+   width: max-content;
+}
+
+// Subscription Plans
+.subscription-wrapper{
+   position: relative;
+   z-index: 2;
+   &::before{
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 50%;
+      background: var(--#{$prefix}primary);
+      z-index: -1;
+   }
+   .price-box{
+      border: 1px solid var(--#{$prefix}border-color);
+   }
+   .price{
+      font-size: 60px;
+      line-height: 1.18;
+      text-align: center;
+
+   }
+   .subdcription-plan-item-yearly{
+      position: relative;
+      top: -60px;
+      @include media-breakpoint-down(xl) {
+         position: inherit;
+         top: 0;
+      }
+   }
+   .close-icon{
+      background: var(--#{$prefix}body-bg);
+      color: var(--#{$prefix}heading-color);
+   }
+}

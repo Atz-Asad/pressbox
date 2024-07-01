@@ -1,0 +1,273 @@
+  /**************************/
+ /********* nav CSS ********/
+/**************************/
+.navbar-nav{
+    &.me-auto{
+        .nav-item:first-child{
+            .nav-link{
+                padding-left: 0;
+            }
+        }
+    }
+    .has-megamenu{
+        position: static !important;
+    }
+    .megamenu{
+        left: 0;
+        width: 100%;
+        right: 0;
+        margin-top: 0;
+    }
+    .dropdown-menu.dropdown-submenu{
+        left: 100%;
+        top: 0px;  
+    }
+   
+}
+.navbar {
+    .nav-link{
+        color: rgba(var(--#{$prefix}white-rgb), .9);
+    }
+    a{
+        text-decoration: none;
+    }
+}
+.dropdown-item{
+    font-weight: 500;
+}
+.dropdown-toggle::after{
+    content: "\e904";
+    padding: 0 0px 0 10px;
+    font-family: "icomoon";
+    border: none;
+    font-size: 10px;
+    font-weight: 400;
+    top: 2px;
+    position: relative;
+    left: -8px;
+}
+.nav-link.show{
+    transition: slideUp .5s ease-in-out;
+}
+
+// sticky navbar
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--#{$prefix}primary);
+    animation: fadeInDown 0.5s;
+}
+
+/**********************************/
+/********* Breadcrumb CSS ********/
+/********************************/
+.breadcrumb-item {
+    a{
+        --#{$prefix}link-color-rgb: var(--#{$prefix}heading-color);
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        &:hover{
+            color: var(--#{$prefix}primary);
+        }
+    }
+    // + .breadcrumb-item::before {
+    //     content: "";
+    //     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='currentColor'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+    //     width: 24px;
+    //     height: 24px;
+    //     background-repeat: no-repeat;
+    //     background-position: center center;
+    //     background-size: 14px auto;
+    //     position: relative;
+    //     top: 3px;
+    //     padding: 0 5px;
+    // }
+
+    + .breadcrumb-item::before{
+        font-family: "icomoon";
+        content: "\e914";
+        position: relative;
+        top: 6px;
+        padding: 0 5px;
+        background-image: none;
+        font-size: 12px;
+    }
+}
+
+/**********************************/
+/********* Blockquote CSS ********/
+/********************************/
+.blockquote{
+    margin: 0 0 30px 0;
+    width: 100%;
+    .blockquote-title{
+        color: var(--#{$prefix}meta-color);
+        position: relative;
+        padding-left: 30px;
+        font-family: var(--#{$prefix}card-title-font);
+        &::before{
+            position: absolute;
+            font-family: "icomoon" !important;
+            content: "\e933";
+            left: 0px;
+            top: -23px;
+            font-size: 50px;
+            color: rgba(var(--#{$prefix}primary-rgb), .3);
+        }
+    }
+    .source-title{
+        color: var(--#{$prefix}primary);
+        position: relative;
+        padding-left: 40px;
+        &::before{
+            position: absolute;
+            content: '';
+            width: 30px;
+            height: 1px;
+            left: 0px;
+            top: 50%;
+            background: var(--#{$prefix}primary);
+        }
+    }
+}
+
+.blockquote-style-2{
+    position: relative;
+    padding-left: 80px;
+    .blockquote-title{
+        padding-left: 0;
+        color: var(--#{$prefix}meta-color);
+        &::before{
+            content: none;
+        }
+    }
+    &::before{
+        position: absolute;
+        font-family: "icomoon" !important;
+        content: "\e933";
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        color: rgba(var(--#{$prefix}primary-rgb));
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        width: 3px;
+        height: 100%;
+        left: 58px;
+        top: 0;
+        background: var(--#{$prefix}primary);
+    }
+    .source-title{
+        color: var(--#{$prefix}meta-color);
+        position: relative;
+        padding-left: 0;
+        &::before{
+            content: none;
+        }
+    }
+}
+
+/********************************/
+/********* Nav Tabs CSS ********/
+/******************************/
+.nav-tabs{
+    --#{$prefix}nav-tabs-border-width: 0;
+    --#{$prefix}nav-tabs-border-radius: 0;
+    --#{$prefix}nav-tabs-link-hover-bg: 0;
+    .nav-link{
+        color: var(--#{$prefix}heading-color);
+        padding: 0;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+    .nav-link:hover,
+    .nav-link.active,
+    .nav-link:focus, 
+    .nav-tabs .nav-item.show .nav-link{
+        --#{$prefix}nav-tabs-link-active-border-color: 0;
+        --#{$prefix}nav-tabs-link-hover-border-color: 0;
+        --#{$prefix}nav-tabs-link-active-color: var(--#{$prefix}primary);
+        --#{$prefix}nav-tabs-link-hover-color: var(--#{$prefix}primary);
+    }
+    .nav-link:hover{
+        background: transparent;
+        color: var(--#{$prefix}primary);
+    }
+    .nav-link.active{
+        font-weight: 600;
+    }
+}
+.nav-tabs-style-2{
+    .nav-link{
+        padding: 10px 30px;
+        font-weight: 700;
+        color: var(--#{$prefix}meta-color);
+        font-size: 30px;
+        @include media-breakpoint-down(lg) {
+            padding: 5px 20px;
+            font-size: 16px;
+        }
+    }
+    .nav-link:hover,
+    .nav-link.active{
+        background: var(--#{$prefix}primary);
+        color: var(--#{$prefix}white);
+    }
+}
+.nav-tabs-style-3{
+    border-right: 1px solid var(--#{$prefix}border-color);
+    padding-right: 20px;
+    flex: 0 0 240px;
+    .nav-link{
+        border-bottom: 1px solid var(--#{$prefix}border-color);
+        color: var(--#{$prefix}meta-color);
+        width: 100%;
+        text-align: left;
+        padding: 3px 0;
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    .nav-link:hover,
+    .nav-link.active{
+        color: var(--#{$prefix}primary);
+    }
+}
+.nav-tabs-style-4{
+    .nav-link{
+        background: var(--#{$prefix}secondary);
+        color: var(--#{$prefix}white);
+        width: 50%;
+        padding: 6px;
+    }
+    .nav-link:hover,
+    .nav-link.active{
+        background: var(--#{$prefix}primary);
+        color: var(--#{$prefix}white);
+    }
+    
+}
+
+/**********************************/
+/********* Pagination CSS ********/
+/********************************/
+
+.pagination {
+    --#{$prefix}pagination-active-bg: var(--#{$prefix}primary);
+    --#{$prefix}pagination-border-color: var(--#{$prefix}border-color);
+    --#{$prefix}pagination-hover-bg:var(--#{$prefix}primary);
+    --#{$prefix}pagination-hover-color: var(--#{$prefix}white);
+    --#{$prefix}pagination-color: var(--#{$prefix}primary);
+    --#{$prefix}pagination-hover-border-color: var(--#{$prefix}primary);
+    // --#{$prefix}pagination-disabled-bg: var(--#{$prefix}secondary);
+    // --#{$prefix}pagination-disabled-color: var(--#{$prefix}white);
+    --#{$prefix}pagination-border-radius: 0;
+    --#{$prefix}pagination-focus-box-shadow: none;
+}

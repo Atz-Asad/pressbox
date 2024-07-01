@@ -1,0 +1,92 @@
+  /**************************/
+ /******** footer CSS ******/
+/**************************/
+
+
+.footer-widget{
+  .input-group{
+    .form-control:focus{
+      background: transparent;
+      box-shadow: none;
+      border: 2px solid var(--#{$prefix}white);
+    }
+  }
+
+  .contact{
+    a{
+      text-decoration: none;
+    }
+  }
+  .card-title{
+    font-family: var(--#{$prefix}card-title-font); 
+    a{
+      text-decoration: none;
+      &:hover{
+        color: var(--#{$prefix}white);
+      }
+    }
+  }
+  
+}
+
+
+
+
+
+
+.footer-menu{
+  ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    row-gap: 20px;
+    column-gap: 40px;
+    @include media-breakpoint-down(sm) {
+      column-gap: 20px;
+    }
+    a{
+      text-decoration: none;
+      color: var(--#{$prefix}white);
+      position: relative;
+
+      &::after{
+        position: absolute;
+        content: '';
+        height: 2px;
+        width: 100%;
+        background: var(--#{$prefix}white);
+        left: 0;
+        bottom: -3px;
+        transform: scale(0);
+        transition: all 0.3s ease;
+      }
+      &:hover::after{
+        transform: scale(1);
+      }
+    }
+  } 
+}
+
+.footer-category{
+  display: flex;
+  column-gap: 60px;
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 14px;
+    column-gap: 60px;
+    justify-content: space-between;
+    a{
+      text-decoration: none;
+      color: var(--#{$prefix}white);
+      position: relative;
+    }
+  }
+}
