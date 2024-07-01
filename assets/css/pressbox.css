@@ -21263,8 +21263,8 @@ textarea.form-control-lg {
 /******** global CSS ********/
 /****************************/
 :root {
-  --bs-primary: #0F90E6;
-  --bs-primary-rgb: 15, 144, 230;
+  --bs-primary: #ff0000;
+  --bs-primary-rgb: 255, 0, 0;
   --bs-secondary: #394146;
   --bs-secondary-rgb: 57, 65, 70;
   --bs-body-bg: #FAFAFA;
