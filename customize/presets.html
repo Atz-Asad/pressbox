@@ -1,5 +1,5 @@
 <!-- Customise Button -->
-<a class="position-fixed customise-btn shadow top-50 bg-primary text-secondary fw-semibold rounded-4 text-decoration-none d-flex align-items-center gap-2" href="#customizer" data-bs-toggle="offcanvas" style="margin-top: -1rem; padding: .35rem .75rem .45rem .75rem; transform: rotate(-90deg); font-size: calc(var(--ar-body-font-size) * .8125); letter-spacing: .075rem; z-index: 1030;">
+<a class="position-fixed customise-btn shadow top-50 bg-primary text-white fw-medium rounded-4 text-decoration-none d-flex align-items-center gap-2" href="#customizer" data-bs-toggle="offcanvas" style="margin-top: -1rem; padding: .35rem .75rem .45rem .75rem; transform: rotate(-90deg); font-size: calc(var(--ar-body-font-size) * .8125); letter-spacing: .075rem; z-index: 1030;">
     <span class="gear-icon d-inline-flex">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
             <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
@@ -19,7 +19,7 @@
             <button type="reset" onclick="resetButtonEve()" class="btn btn-xs btn-outline-primary ms-auto">Reset</button>
         </div>        
     </div>
-    <div class="offcanvas-body bg-light">
+    <div class="offcanvas-body">
         <form id="customizer-form" class="d-grid h-100">
             <div class="accordion" id="accordionCustomize">
                 <div class="accordion-item">
@@ -37,7 +37,7 @@
                                     <span class="cursor-pointer preset2" onclick="loadPreset('preset2')">Color 2</span>
                                     <span class="cursor-pointer preset3" onclick="loadPreset('preset3')">Color 3</span>
                                     <span class="cursor-pointer preset4" onclick="loadPreset('preset4')">Color 4</span>
-                                    <span class="cursor-pointer blackwhite" onclick="loadPreset('blackwhite')">Black & White</span>
+                                    <!-- <span class="cursor-pointer blackwhite" onclick="loadPreset('blackwhite')">Black & White</span> -->
                                 </div>
                   
                                 <label class="d-flex justify-content-between" for="primary">
@@ -62,17 +62,6 @@
                                     Global text color						
                                     <input type="color" name="body" value="#394146" id="body" class="preset-input" data-selector="body" data-var="--bs-body-color" data-value-type="hexa" onchange="updateHiddenValue('bodyrgb', this.value)" />
                                     <input type="color" name="bodyrgb" value="#394146" class="preset-input d-none" data-selector="body" data-var="--bs-body-color-rgb" data-value-type="rgb" />
-                                </label>
-
-                                <label class="d-flex justify-content-between" for="bodybg">
-                                    Body background	
-                                    <input type="color" name="bodybg" value="#FAFAFA" id="bodybg" class="preset-input" data-selector="body" data-var="--bs-body-bg" data-value-type="hexa" onchange="updateHiddenValue('bodybgrgb', this.value)" />
-                                    <input type="color" name="bodybgrgb" value="#FAFAFA" class="preset-input d-none" data-selector="body" data-var="--bs-body-bg-rgb" data-value-type="rgb" />
-                                </label>
-
-                                <label class="d-flex justify-content-between" for="menucolor">
-                                    Menu color						
-                                    <input type="color" name="menucolor" value="#0F90E6" id="menucolor" class="preset-input" data-selector=".navbar-nav" data-var="--bs-nav-link-color" data-value-type="hexa" />
                                 </label>
                             </div>
                         </div>        
@@ -168,11 +157,8 @@
             </div>
             							 
         </form>
-        
         <style id="customize-css"></style>
         <link rel="stylesheet" href="customize/color.css?ver=1.6" />
-
-
     </div>					
 </div>
 <!-- Customise Button end-->

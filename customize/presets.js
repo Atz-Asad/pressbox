@@ -9,9 +9,6 @@ const pressboxPresets = [
             headingrgb: "#202427",
             body: "#394146", 
             bodyrgb: "#394146",  
-            bodybg: "#FAFAFA", 
-            bodybgrgb: "#FAFAFA", 
-            menucolor: "#0F90E6",
         }
     },
     
@@ -25,9 +22,6 @@ const pressboxPresets = [
             headingrgb: "#202427", 
             body: "#000000", 
             bodyrgb: "#000000",
-            bodybg: "#ffffff", 
-            bodybgrgb: "#ffffff", 
-            menucolor: "#ff0000"
         },
     },
     
@@ -41,9 +35,6 @@ const pressboxPresets = [
             headingrgb: "#202427", 
             body: "#482121", 
             bodyrgb: "#482121", 
-            bodybg: "#ffffff", 
-            bodybgrgb: "#ffffff", 
-            menucolor: "#482121",
         }
     },
     {
@@ -56,9 +47,6 @@ const pressboxPresets = [
             headingrgb: "#202427", 
             body: "#000000", 
             bodyrgb: "#000000", 
-            bodybg: "#EEEEEE", 
-            bodybgrgb: "#EEEEEE", 
-            menucolor: "#9f0592",
         }
     },
     {
@@ -71,24 +59,6 @@ const pressboxPresets = [
             headingrgb: "#202427", 
             body: "#483434", 
             bodyrgb: "#483434", 
-            bodybg: "#ffffff", 
-            bodybgrgb: "#ffffff", 
-            menucolor: "#483434",
-        }
-    },
-    {
-        'blackwhite': { 
-            primary: "#0F90E6", 
-            primaryrgb: "#0F90E6",  
-            secondary: "#394146", 
-            secondaryrgb: "#394146", 
-            heading: "#202427",
-            headingrgb: "#202427",
-            body: "#000000", 
-            bodyrgb: "#000000", 
-            bodybg: "#ffffff", 
-            bodybgrgb: "#ffffff", 
-            menucolor: "#000000",
         }
     },
     {
@@ -361,11 +331,10 @@ $(document).on("#al_reset","click",function(){
 function resetButtonEve (){
     $("#customizer-form")[0].reset();
     applyCSS();
-    loadPreset('default')
     loadPreset('preset1')
     loadPreset('preset2')
     loadPreset('preset3')
     loadPreset('preset4')
-    loadPreset('blackwhite')
+    loadPreset('default')
     console.log($("#customizer-form"));
 }
