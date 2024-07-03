@@ -38,7 +38,7 @@
 <body>
   <!-- Start page-wrapper -->
   <div class="page">
-
+<!-- header -->
 <header class="section-header bg-primary ">
     <div class="header-top-bar bg-dark py-2">
         <div class="container">
@@ -62,12 +62,12 @@
                     </div>
                 </div>
                 <div class="socials d-flex align-items-center gap-3 justify-content-center">
-                    <a class="text-white" href="https://www.facebook.com/" target="_blank"><i class="icon-facebook"></i></a>
-                    <a class="text-white" href="https://www.instagram.com/" target="_blank"><i class="icon-instragram"></i></a>
-                    <a class="text-white" href="https://www.linkedin.com/" target="_blank"><i class="icon-linkdin"></i></a>
-                    <a class="text-white" href="https://x.com/" target="_blank"><i class="icon-twiter"></i></a>
-                    <a class="text-white" href="https://vimeo.com/" target="_blank"><i class="icon-vimeo"></i></a>
-                    <a class="text-white" href="https://www.youtube.com/" target="_blank"><i class="icon-youtube"></i></a>
+                    <a class="text-white" href="https://www.facebook.com/" target="_blank" aria-label="facebook"><i class="icon-facebook"></i></a>
+                    <a class="text-white" href="https://www.instagram.com/" target="_blank" aria-label="instragram"><i class="icon-instragram"></i></a>
+                    <a class="text-white" href="https://www.linkedin.com/" target="_blank" aria-label="linkdin"><i class="icon-linkdin"></i></a>
+                    <a class="text-white" href="https://x.com/" target="_blank" aria-label="twiter"><i class="icon-twiter"></i></a>
+                    <a class="text-white" href="https://vimeo.com/" target="_blank" aria-label="vimeo"><i class="icon-vimeo"></i></a>
+                    <a class="text-white" href="https://www.youtube.com/" target="_blank" aria-label="youtube"><i class="icon-youtube"></i></a>
                 </div>
             </div>
         </div>
@@ -651,9 +651,9 @@
                         </div>
                     </div>
                     <div class="d-flex ms-lg-auto gap-20" role="search">
-                        <a data-bs-target="#registrationmodal" data-bs-toggle="modal" class="text-white" href="#"><i class="icon-user"></i></a>
-                        <a class="text-white" href="#" data-bs-toggle="modal" data-bs-target="#searchmodal"><i class="icon-serch"></i></a>
-                        <a class="text-white d-none d-lg-block" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-sidebar" aria-controls="offcanvas-sidebar" href="#"><i class="icon-menu"></i></a>
+                        <a data-bs-target="#registrationmodal" data-bs-toggle="modal" class="text-white" href="#" aria-label="user"><i class="icon-user"></i></a>
+                        <a class="text-white" href="#" data-bs-toggle="modal" data-bs-target="#searchmodal" aria-label="serch"><i class="icon-serch"></i></a>
+                        <a class="text-white d-none d-lg-block" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-sidebar" aria-controls="offcanvas-sidebar" href="#" aria-label="hambermenu"><i class="icon-menu"></i></a>
                     </div>
                 </div>
             </nav>
@@ -661,7 +661,7 @@
     </div>
 </header>
 <!--  End header -->
-<!-- blocks/offcanvas-sidebar' -->
+<!-- offcanvas-sidebar -->
 <!-- Off canvas Sidebar Start-->
 <div class="offcanvas offcanvas-end offcanvas-sidebar-menu" data-bs-scroll="true" tabindex="-1" id="offcanvas-sidebar">
     <div class="offcanvas-body pb-40">
@@ -1089,7 +1089,7 @@
   </div>
 </div>
 <!-- End Modal Serch-->
-<!-- Registrationmodal News -->
+<!-- Registrationmodal  -->
 <!-- Registration Modal Start-->
 <div class="modal fade" id="registrationmodal" aria-hidden="true" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered">
@@ -1190,7 +1190,7 @@
             <a href="#">
                 <img src="assets/images/popup-ads.jpg" alt="popupads">
             </a>
-            <a class="close-icon" id="closePopup" href="#"><i class="icon-close"></i></a>
+            <a class="close-icon" id="closePopup" href="#" aria-label="popupads close"><i class="icon-close"></i></a>
         </div>
     </div>
 </div>
@@ -1409,12 +1409,12 @@
                             <!-- We are Social -->
                             <h2 class="border-bottom border-info mb-20 mb-lg-40">We are Social</h2>
                             <div class="sidebar-socials-2">
-                                <a class="facebook" href="#" ><img src="assets/images/facebook-logo.png" alt="facebook"></a>
-                                <a class="instragram" href="#"><img src="assets/images/instagram-logo.png" alt="instagram"></a>
-                                <a class="youtube" href="#"><img src="assets/images/youtube-logo.png" alt="youtube"></a>
-                                <a class="linkedin" href="#"><img src="assets/images/linkedin-logo.png" alt="linkedin"></a>
-                                <a class="discord" href="#"><img src="assets/images/discord-logo.png" alt="discord"></a>
-                                <a class="pintarest" href="#"><img src="assets/images/pinterest-logo.png" alt="pintarest"></a>
+                                <a class="facebook" href="#" aria-label="facebook"><img src="assets/images/facebook-logo.png" alt="facebook"></a>
+                                <a class="instragram" href="#" aria-label="instagram"><img src="assets/images/instagram-logo.png" alt="instagram"></a>
+                                <a class="youtube" href="#" aria-label="youtube"><img src="assets/images/youtube-logo.png" alt="youtube"></a>
+                                <a class="linkedin" href="#" aria-label="linkedin"><img src="assets/images/linkedin-logo.png" alt="linkedin"></a>
+                                <a class="discord" href="#" aria-label="discord"><img src="assets/images/discord-logo.png" alt="discord"></a>
+                                <a class="pintarest" href="#" aria-label="pinterest"><img src="assets/images/pinterest-logo.png" alt="pintarest"></a>
                             </div>
                         </div>
                         <!-- add -->
@@ -1542,12 +1542,12 @@
             <div class="d-flex flex-column flex-lg-row align-items-center gap-30 justify-content-between">
                 <p class="copyright-text text-white m-0 order-1">© <span class="dynamic-year"></span> Pressbox. All rights reserved</p>
                 <div class="footer-socials d-flex align-items-center flex-wrap gap-3 order-lg-2 ">
-                    <a href="#"><i class="icon-facebook"></i></a>
-                    <a href="#"><i class="icon-instragram"></i></a>
-                    <a href="#"><i class="icon-linkdin"></i></a>
-                    <a href="#"><i class="icon-twiter"></i></a>
-                    <a href="#"><i class="icon-vimeo"></i></a>
-                    <a href="#"><i class="icon-youtube"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" aria-label="facebook"><i class="icon-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="instragram"><i class="icon-instragram"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" aria-label="linkdin"><i class="icon-linkdin"></i></a>
+                    <a href="https://x.com/" target="_blank" aria-label="twiter"><i class="icon-twiter"></i></a>
+                    <a href="https://vimeo.com/" target="_blank" aria-label="vimeo"><i class="icon-vimeo"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" aria-label="youtube"><i class="icon-youtube"></i></a>
                 </div>
             </div>
         </div>

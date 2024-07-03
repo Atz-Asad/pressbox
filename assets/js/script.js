@@ -472,7 +472,7 @@
   // =================  Back-To-Top =============
 
   // social icon hover effect 
-  if ($('.socials-style-5').length > 0) {
+  if ($('.share').length > 0) {
 
     const shareIcon = document.querySelector(".share");
     const social = document.querySelector(".social");

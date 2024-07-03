@@ -38,7 +38,7 @@
 <body>
   <!-- Start page-wrapper -->
   <div class="page">
-
+<!-- header -->
 <header class="section-header bg-primary ">
     <div class="header-top-bar bg-dark py-2">
         <div class="container">
@@ -62,12 +62,12 @@
                     </div>
                 </div>
                 <div class="socials d-flex align-items-center gap-3 justify-content-center">
-                    <a class="text-white" href="https://www.facebook.com/" target="_blank"><i class="icon-facebook"></i></a>
-                    <a class="text-white" href="https://www.instagram.com/" target="_blank"><i class="icon-instragram"></i></a>
-                    <a class="text-white" href="https://www.linkedin.com/" target="_blank"><i class="icon-linkdin"></i></a>
-                    <a class="text-white" href="https://x.com/" target="_blank"><i class="icon-twiter"></i></a>
-                    <a class="text-white" href="https://vimeo.com/" target="_blank"><i class="icon-vimeo"></i></a>
-                    <a class="text-white" href="https://www.youtube.com/" target="_blank"><i class="icon-youtube"></i></a>
+                    <a class="text-white" href="https://www.facebook.com/" target="_blank" aria-label="facebook"><i class="icon-facebook"></i></a>
+                    <a class="text-white" href="https://www.instagram.com/" target="_blank" aria-label="instragram"><i class="icon-instragram"></i></a>
+                    <a class="text-white" href="https://www.linkedin.com/" target="_blank" aria-label="linkdin"><i class="icon-linkdin"></i></a>
+                    <a class="text-white" href="https://x.com/" target="_blank" aria-label="twiter"><i class="icon-twiter"></i></a>
+                    <a class="text-white" href="https://vimeo.com/" target="_blank" aria-label="vimeo"><i class="icon-vimeo"></i></a>
+                    <a class="text-white" href="https://www.youtube.com/" target="_blank" aria-label="youtube"><i class="icon-youtube"></i></a>
                 </div>
             </div>
         </div>
@@ -651,9 +651,9 @@
                         </div>
                     </div>
                     <div class="d-flex ms-lg-auto gap-20" role="search">
-                        <a data-bs-target="#registrationmodal" data-bs-toggle="modal" class="text-white" href="#"><i class="icon-user"></i></a>
-                        <a class="text-white" href="#" data-bs-toggle="modal" data-bs-target="#searchmodal"><i class="icon-serch"></i></a>
-                        <a class="text-white d-none d-lg-block" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-sidebar" aria-controls="offcanvas-sidebar" href="#"><i class="icon-menu"></i></a>
+                        <a data-bs-target="#registrationmodal" data-bs-toggle="modal" class="text-white" href="#" aria-label="user"><i class="icon-user"></i></a>
+                        <a class="text-white" href="#" data-bs-toggle="modal" data-bs-target="#searchmodal" aria-label="serch"><i class="icon-serch"></i></a>
+                        <a class="text-white d-none d-lg-block" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-sidebar" aria-controls="offcanvas-sidebar" href="#" aria-label="hambermenu"><i class="icon-menu"></i></a>
                     </div>
                 </div>
             </nav>
@@ -661,7 +661,7 @@
     </div>
 </header>
 <!--  End header -->
-<!-- blocks/offcanvas-sidebar' -->
+<!-- offcanvas-sidebar -->
 <!-- Off canvas Sidebar Start-->
 <div class="offcanvas offcanvas-end offcanvas-sidebar-menu" data-bs-scroll="true" tabindex="-1" id="offcanvas-sidebar">
     <div class="offcanvas-body pb-40">
@@ -918,99 +918,6 @@
   </div>
 </div>
 <!-- Off canvas Sidebar End-->
-<!-- Registrationmodal News -->
-<!-- Registration Modal Start-->
-<div class="modal fade" id="registrationmodal" aria-hidden="true" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-        <div class="modal-header justify-content-between align-items-start">
-            <div>
-                <h2 class="mb-3">Register Now!</h2>
-                <div class="d-flex flex-wrap gap-3">
-                    <p class="m-0">Already have an account? </p>
-                    <a class="fw-semibold small" data-bs-target="#loginmodal" data-bs-toggle="modal" href="#">Log in</a>
-                </div>
-            </div>
-           <a class="close-icon" data-bs-dismiss="modal" aria-label="Close" href="#"><i class="icon-close"></i></a>
-        </div>
-        <div class="modal-body">
-            <!-- form -->
-            <form>
-                <div class="row g-3 mb-20">
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" name="firstName" placeholder="First Name" required>
-                    </div>
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
-                    </div>
-                </div>
-                <div class="col">
-                    <input type="email" class="form-control mb-20" name="email" placeholder="Email" required>
-                </div>
-                <div class="col">
-                    <input type="password" class="form-control mb-20" name="password" placeholder="Password" required>
-                </div>
-                <div class="mb-30 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">I agree with <a href="#">Privacy</a> and <a href="#">Policy</a></label>
-                </div>
-                <button type="submit" class="btn btn-secondary w-100 mb-40">Sign up</button>
-            </form>
-        </div>
-
-    </div>
-  </div>
-</div>
-<!-- Registration Modal End-->
-<!-- Log in Modal -->
-<!-- login Modal Start-->
-<div class="modal fade" id="loginmodal" aria-hidden="true" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-        <div class="modal-header justify-content-between align-items-start">
-            <div>
-                <h2 class="mb-3">Welcome Back</h2>
-                <div class="d-flex flex-wrap gap-3">
-                    <p class="m-0">Don’t have an account? </p>
-                    <a class="fw-semibold small" data-bs-target="#registrationmodal" data-bs-toggle="modal" href="#">Sign up</a>
-                </div>
-            </div>
-           <a class="close-icon" data-bs-dismiss="modal" aria-label="Close" href="#"><i class="icon-close"></i></a>
-        </div>
-        <div class="modal-body">
-            <!-- form -->
-            <form>
-                <div class="col">
-                    <input type="text" class="form-control mb-20" name="name" placeholder="Username or email" required>
-                </div>
-                <div class="col">
-                    <input type="password" class="form-control mb-20" name="password" placeholder="Password" required>
-                </div>
-                <div class="mb-30 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                    <label class="form-check-label" for="exampleCheck2">Remember me <a class="ps-3" href="#">Forgot Password?</a></label>
-                </div>
-                <button type="submit" class="btn btn-secondary w-100 mb-30">Log in</button>
-            </form>
-            <p class="small fw-semibold">Or Log in with</p>
-            <div class="d-flex align-items-center justify-content-between gap-3">
-                <a class="border w-100 py-2 px-40 text-center" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.16 9.19323C17.16 8.5905 17.1059 8.01095 17.0055 7.45459H9V10.7425H13.5746C13.3775 11.8051 12.7786 12.7053 11.8784 13.308V15.4407H14.6255C16.2327 13.961 17.16 11.7819 17.16 9.19323Z" fill="#4285F4"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99997 17.5C11.295 17.5 13.2191 16.7389 14.6254 15.4407L11.8784 13.3079C11.1173 13.8179 10.1436 14.1193 8.99997 14.1193C6.78611 14.1193 4.91224 12.6241 4.24383 10.615H1.40405V12.8173C2.80269 15.5952 5.67724 17.5 8.99997 17.5Z" fill="#34A853"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.24387 10.6151C4.07387 10.1051 3.97728 9.56037 3.97728 9.00014C3.97728 8.43991 4.07387 7.89514 4.24387 7.38514V5.18286H1.40409C0.82841 6.33036 0.5 7.62855 0.5 9.00014C0.5 10.3717 0.82841 11.6699 1.40409 12.8174L4.24387 10.6151Z" fill="#FBBC05"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99997 3.88069C10.2479 3.88069 11.3684 4.30955 12.2493 5.15183L14.6873 2.71387C13.2152 1.34227 11.2911 0.5 8.99997 0.5C5.67724 0.5 2.80269 2.40478 1.40405 5.18274L4.24383 7.38501C4.91224 5.37592 6.78611 3.88069 8.99997 3.88069Z" fill="#EA4335"/>
-                    </svg>
-                </a>
-                <a class="border w-100 py-2 px-40 text-center" href="#"><svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.38679 3.2931V0.526668C9.38679 0.526668 6.55719 0.5 6.3649 0.5C5.08626 0.5 3.24759 1.9541 3.24759 3.6047C3.24759 5.46302 3.24759 6.56622 3.24759 6.56622H0.597656V9.7074H3.2111V17.5H6.30455V9.6709H9.0387L9.38679 6.60131H6.34105C6.34105 6.60131 6.34105 4.71491 6.34105 4.34718C6.34105 3.8054 6.74808 3.27626 7.36004 3.27626C7.76847 3.27766 9.38679 3.2931 9.38679 3.2931Z" fill="#1877F2"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </div>
-  </div>
-</div>
-<!-- login Modal End-->
 <!-- Serchmodal -->
 <!-- Start Modal Serch-->
 <div class="modal modal-fullscreen fade" id="searchmodal" tabindex="-1" aria-hidden="true">
@@ -1182,6 +1089,111 @@
   </div>
 </div>
 <!-- End Modal Serch-->
+<!-- Registrationmodal  -->
+<!-- Registration Modal Start-->
+<div class="modal fade" id="registrationmodal" aria-hidden="true" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-header justify-content-between align-items-start">
+            <div>
+                <h2 class="mb-3">Register Now!</h2>
+                <div class="d-flex flex-wrap gap-3">
+                    <p class="m-0">Already have an account? </p>
+                    <a class="fw-semibold small" data-bs-target="#loginmodal" data-bs-toggle="modal" href="#">Log in</a>
+                </div>
+            </div>
+           <a class="close-icon" data-bs-dismiss="modal" aria-label="Close" href="#"><i class="icon-close"></i></a>
+        </div>
+        <div class="modal-body">
+            <!-- form -->
+            <form>
+                <div class="row g-3 mb-20">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" name="firstName" placeholder="First Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <input type="email" class="form-control mb-20" name="email" placeholder="Email" required>
+                </div>
+                <div class="col">
+                    <input type="password" class="form-control mb-20" name="password" placeholder="Password" required>
+                </div>
+                <div class="mb-30 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">I agree with <a href="#">Privacy</a> and <a href="#">Policy</a></label>
+                </div>
+                <button type="submit" class="btn btn-secondary w-100 mb-40">Sign up</button>
+            </form>
+        </div>
+
+    </div>
+  </div>
+</div>
+<!-- Registration Modal End-->
+<!-- Log in Modal -->
+<!-- login Modal Start-->
+<div class="modal fade" id="loginmodal" aria-hidden="true" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-header justify-content-between align-items-start">
+            <div>
+                <h2 class="mb-3">Welcome Back</h2>
+                <div class="d-flex flex-wrap gap-3">
+                    <p class="m-0">Don’t have an account? </p>
+                    <a class="fw-semibold small" data-bs-target="#registrationmodal" data-bs-toggle="modal" href="#">Sign up</a>
+                </div>
+            </div>
+           <a class="close-icon" data-bs-dismiss="modal" aria-label="Close" href="#"><i class="icon-close"></i></a>
+        </div>
+        <div class="modal-body">
+            <!-- form -->
+            <form>
+                <div class="col">
+                    <input type="text" class="form-control mb-20" name="name" placeholder="Username or email" required>
+                </div>
+                <div class="col">
+                    <input type="password" class="form-control mb-20" name="password" placeholder="Password" required>
+                </div>
+                <div class="mb-30 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                    <label class="form-check-label" for="exampleCheck2">Remember me <a class="ps-3" href="#">Forgot Password?</a></label>
+                </div>
+                <button type="submit" class="btn btn-secondary w-100 mb-30">Log in</button>
+            </form>
+            <p class="small fw-semibold">Or Log in with</p>
+            <div class="d-flex align-items-center justify-content-between gap-3">
+                <a class="border w-100 py-2 px-40 text-center" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.16 9.19323C17.16 8.5905 17.1059 8.01095 17.0055 7.45459H9V10.7425H13.5746C13.3775 11.8051 12.7786 12.7053 11.8784 13.308V15.4407H14.6255C16.2327 13.961 17.16 11.7819 17.16 9.19323Z" fill="#4285F4"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99997 17.5C11.295 17.5 13.2191 16.7389 14.6254 15.4407L11.8784 13.3079C11.1173 13.8179 10.1436 14.1193 8.99997 14.1193C6.78611 14.1193 4.91224 12.6241 4.24383 10.615H1.40405V12.8173C2.80269 15.5952 5.67724 17.5 8.99997 17.5Z" fill="#34A853"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.24387 10.6151C4.07387 10.1051 3.97728 9.56037 3.97728 9.00014C3.97728 8.43991 4.07387 7.89514 4.24387 7.38514V5.18286H1.40409C0.82841 6.33036 0.5 7.62855 0.5 9.00014C0.5 10.3717 0.82841 11.6699 1.40409 12.8174L4.24387 10.6151Z" fill="#FBBC05"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99997 3.88069C10.2479 3.88069 11.3684 4.30955 12.2493 5.15183L14.6873 2.71387C13.2152 1.34227 11.2911 0.5 8.99997 0.5C5.67724 0.5 2.80269 2.40478 1.40405 5.18274L4.24383 7.38501C4.91224 5.37592 6.78611 3.88069 8.99997 3.88069Z" fill="#EA4335"/>
+                    </svg>
+                </a>
+                <a class="border w-100 py-2 px-40 text-center" href="#"><svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.38679 3.2931V0.526668C9.38679 0.526668 6.55719 0.5 6.3649 0.5C5.08626 0.5 3.24759 1.9541 3.24759 3.6047C3.24759 5.46302 3.24759 6.56622 3.24759 6.56622H0.597656V9.7074H3.2111V17.5H6.30455V9.6709H9.0387L9.38679 6.60131H6.34105C6.34105 6.60131 6.34105 4.71491 6.34105 4.34718C6.34105 3.8054 6.74808 3.27626 7.36004 3.27626C7.76847 3.27766 9.38679 3.2931 9.38679 3.2931Z" fill="#1877F2"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- login Modal End-->
+<!-- Popupads -->
+<!-- google ads -->
+<div class="add-popup">
+    <div class="container">
+        <div class="popupads-image-wrapper" id="popup">
+            <a href="#">
+                <img src="assets/images/popup-ads.jpg" alt="popupads">
+            </a>
+            <a class="close-icon" id="closePopup" href="#" aria-label="popupads close"><i class="icon-close"></i></a>
+        </div>
+    </div>
+</div>
 
 <div class="section pt-30">
     <div class="container">
@@ -1223,10 +1235,10 @@
                                                 <i class="icon-share mb-3"></i>
                                                 <h5 class="Share-title mb-20">Share This!</h5>
                                                 <div class="social-icons justify-content-center">
-                                                    <a class="facebook" href="#"><i class="icon-facebook"></i></a>
-                                                    <a class="instragram" href="#"><i class="icon-instragram"></i></a>
-                                                    <a class="linkdin" href="#"><i class="icon-linkdin"></i></a>
-                                                    <a class="twiter" href="#"><i class="icon-twiter"></i></a>
+                                                    <a class="facebook" href="https://www.facebook.com/" target="_blank" aria-label="facebook"><i class="icon-facebook"></i></a>
+                                                    <a class="instragram" href="https://www.instagram.com/" target="_blank" aria-label="instragram"><i class="icon-instragram"></i></a>
+                                                    <a class="linkdin" href="https://www.linkedin.com/" target="_blank" aria-label="linkdin"><i class="icon-linkdin"></i></a>
+                                                    <a class="twiter" href="https://x.com/" target="_blank" aria-label="twiter"><i class="icon-twiter"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1249,12 +1261,12 @@
                                             </div>
                                             <div class="socials-style-5">
                                                 <div class="social">
-                                                    <a class="facebook" href="#"><i class="icon-facebook"></i></a>
-                                                    <a class="instragram" href="#"><i class="icon-instragram"></i></a>
-                                                    <a class="linkdin" href="#"><i class="icon-linkdin"></i></a>
-                                                    <a class="twiter" href="#"><i class="icon-twiter"></i></a>
+                                                    <a class="facebook" href="https://www.facebook.com/" target="_blank" aria-label="facebook"><i class="icon-facebook"></i></a>
+                                                    <a class="instragram" href="https://www.instagram.com/" target="_blank" aria-label="instragram"><i class="icon-instragram"></i></a>
+                                                    <a class="linkdin" href="https://www.linkedin.com/" target="_blank" aria-label="linkdin"><i class="icon-linkdin"></i></a>
+                                                    <a class="twiter" href="https://x.com/" target="_blank" aria-label="twiter"><i class="icon-twiter"></i></a>
                                                 </div>
-                                                <a class="share" href="#"><i class="icon-share small"></i></a>
+                                                <a class="twiter" href="https://x.com/" target="_blank" aria-label="twiter"><i class="icon-twiter"></i></a>
                                             </div>
                                         </div>
                                         <p class="fs-5 mb-30">The match, billed as a clash of titans between two fiercely competitive teams, exceeded all expectations as both sides unleashed an offensive onslaught from the opening whistle. With attacking intent evident from the outset, the game promised fireworks, and it did not disappoint.</p>
@@ -1353,11 +1365,11 @@
                                 <div class="mb-lg-100 mb-60">
                                     <h5 class="mb-3">Share This News:</h5>
                                     <div class="socials-style-4 d-flex align-items-center justify-content-between flex-wrap gap-3">
-                                        <a class="facebook" href="#"><i class="icon-facebook"></i></a>
-                                        <a class="instragram" href="#"><i class="icon-instragram"></i></a>
-                                        <a class="linkdin" href="#"><i class="icon-linkdin"></i></a>
-                                        <a class="pinterest" href="#"><i class="icon-pinterest"></i></a>
-                                        <a class="twiter" href="#"><i class="icon-twiter"></i></a>
+                                        <a class="facebook" href="https://www.facebook.com/" target="_blank" aria-label="facebook"><i class="icon-facebook"></i></a>
+                                        <a class="instragram" href="https://www.instagram.com/" target="_blank" aria-label="instragram"><i class="icon-instragram"></i></a>
+                                        <a class="linkdin" href="https://www.linkedin.com/" target="_blank" aria-label="linkdin"><i class="icon-linkdin"></i></a>
+                                        <a class="pinterest" href="https://www.pinterest.com/" target="_blank" aria-label="pinterest"><i class="icon-pinterest"></i></a>
+                                        <a class="twiter" href="https://x.com/" target="_blank" aria-label="twiter"><i class="icon-twiter"></i></a>
                                     </div>
                                 </div>
                                 <!-- Pagination -->
@@ -1841,12 +1853,12 @@
             <div class="d-flex flex-column flex-lg-row align-items-center gap-30 justify-content-between">
                 <p class="copyright-text text-white m-0 order-1">© <span class="dynamic-year"></span> Pressbox. All rights reserved</p>
                 <div class="footer-socials d-flex align-items-center flex-wrap gap-3 order-lg-2 ">
-                    <a href="#"><i class="icon-facebook"></i></a>
-                    <a href="#"><i class="icon-instragram"></i></a>
-                    <a href="#"><i class="icon-linkdin"></i></a>
-                    <a href="#"><i class="icon-twiter"></i></a>
-                    <a href="#"><i class="icon-vimeo"></i></a>
-                    <a href="#"><i class="icon-youtube"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" aria-label="facebook"><i class="icon-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="instragram"><i class="icon-instragram"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" aria-label="linkdin"><i class="icon-linkdin"></i></a>
+                    <a href="https://x.com/" target="_blank" aria-label="twiter"><i class="icon-twiter"></i></a>
+                    <a href="https://vimeo.com/" target="_blank" aria-label="vimeo"><i class="icon-vimeo"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" aria-label="youtube"><i class="icon-youtube"></i></a>
                 </div>
             </div>
         </div>
