@@ -68,8 +68,8 @@
   // Today’s Match slider Home 2 ===========
   if ($('.breakingnews-slider-3').length > 0) { 
     var swiper2 = new Swiper(".breakingnews-slider-3", {
-      spaceBetween: 40,
-      slidesPerView: 2.8,
+      // spaceBetween: 40,
+      // slidesPerView: 2.8,
       loop: true,
       autoplay: {
         delay: 0,
@@ -97,8 +97,8 @@
           
         },
         1400: {
-          spaceBetween: 40,
-          slidesPerView: 2.6,
+          spaceBetween: 20,
+          slidesPerView: 1.3,
           
         },
       },
@@ -449,39 +449,6 @@
   //============== Ads Pop up ==========
 
   //============== Scroll back to top ==========
-  // if ($('.progress-wrap').length > 0) { 
-
-  //   var progressPath = document.querySelector('.progress-wrap path');
-  //   var pathLength = progressPath.getTotalLength();
-  //   progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
-  //   progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
-  //   progressPath.style.strokeDashoffset = pathLength;
-  //   progressPath.getBoundingClientRect();
-  //   progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';		
-  //   var updateProgress = function () {
-  //     var scroll = $(window).scrollTop();
-  //     var height = $(document).height() - $(window).height();
-  //     var progress = pathLength - (scroll * pathLength / height);
-  //     progressPath.style.strokeDashoffset = progress;
-  //   }
-  //   updateProgress();
-  //   $(window).scroll(updateProgress);	
-  //   var offset = 50;
-  //   var duration = 550;
-  //   jQuery(window).on('scroll', function() {
-  //     if (jQuery(this).scrollTop() > offset) {
-  //       jQuery('.progress-wrap').addClass('active-progress');
-  //     } else {
-  //       jQuery('.progress-wrap').removeClass('active-progress');
-  //     }
-  //   });				
-  //   jQuery('.progress-wrap').on('click', function(event) {
-  //     event.preventDefault();
-  //     jQuery('html, body').animate({scrollTop: 0}, duration);
-  //     return false;
-  //   })
-  // }
-
   if ($('.btn-back-to-top').length > 0) {
     document.addEventListener("DOMContentLoaded", function() {
       const backtotop = document.querySelector('.btn-back-to-top');
@@ -502,8 +469,24 @@
       });
     });
   }
-
   // =================  Back-To-Top =============
+
+  // social icon hover effect 
+  if ($('.socials-style-5').length > 0) {
+
+    const shareIcon = document.querySelector(".share");
+    const social = document.querySelector(".social");
+    
+    shareIcon.addEventListener("mouseover", () => {
+      social.style.display = "flex";
+      shareIcon.style.display = "none";
+    });
+    social.addEventListener("mouseleave", () => {
+      social.style.display = "none";
+      shareIcon.style.display = "block";
+    });
+  }
+
 
   // odometer CountDown
   if ($('.odometer').length > 0) {

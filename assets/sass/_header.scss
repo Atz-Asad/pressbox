@@ -184,7 +184,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
- 
+  
   a{
     background: #007AB5;
     padding: 5px 10px;
@@ -205,7 +205,7 @@
   .instragram{
     // background: linear-gradient(to right, #FFC658 0%,#F62B37 24%, #C82091 48%, #C32193 2%, #9E2AA8 10%, #7D31B9 10%, #6337C7 10%, #4E3CD2 20%,  #403FDA 10%,#3841DF 10%, #3542E0 100%);
     background-image: linear-gradient(45deg, hsl(67.89deg 100% 50%) 0%, hsl(309.25deg 42.47% 48.08%) 21%, hsl(200 100% 27% / 1) 30%, hsl(298deg 100% 20.87%) 39%, hsl(318, 100%, 33%) 46%, hsl(337, 100%, 41%) 54%, hsl(357, 100%, 40%) 61%, hsl(224.7deg 100% 56.06%) 69%, hsl(239.54deg 100% 60.45%) 79%, hsl(226.69deg 96.73% 47.63%) 100%);
-
+    
     &:hover{
       background-image: linear-gradient(45deg, hsl(67.89deg 100% 50%) 0%, hsl(309.25deg 42.47% 48.08%) 21%, hsl(200 100% 27% / 1) 30%, hsl(298deg 100% 20.87%) 39%, hsl(318, 100%, 33%) 46%, hsl(337, 100%, 41%) 54%, hsl(357, 100%, 40%) 61%, hsl(224.7deg 100% 56.06%) 69%, hsl(239.54deg 100% 60.45%) 79%, hsl(226.69deg 96.73% 47.63%) 100%);
     }
@@ -226,6 +226,81 @@
     background: #E02A2F;
   }
 }
+.socials-style-5{
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  .share{
+    height: 24px;
+    width: 24px;
+    color: var(--#{$prefix}white);
+    background: var(--#{$prefix}secondary);
+    text-decoration: none;
+    text-align: center;
+    line-height: 24px;
+    transition: 0.3s;
+    &:hover{
+      background: var(--#{$prefix}primary);
+     
+    }
+  }
+  .social{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    transition: all 0.5s ease;
+    a{
+      height: 24px;
+      width: 24px;
+      color: var(--#{$prefix}white);
+      background: var(--#{$prefix}secondary);
+      text-decoration: none;
+      transition: 0.3s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      &:hover{
+        background: var(--#{$prefix}primary);
+      }
+    }
+    .facebook{
+      background: #1E4FAD;
+    }
+    .instragram{
+      // background: linear-gradient(to right, #FFC658 0%,#F62B37 24%, #C82091 48%, #C32193 2%, #9E2AA8 10%, #7D31B9 10%, #6337C7 10%, #4E3CD2 20%,  #403FDA 10%,#3841DF 10%, #3542E0 100%);
+      background-image: linear-gradient(45deg, hsl(67.89deg 100% 50%) 0%, hsl(309.25deg 42.47% 48.08%) 21%, hsl(200 100% 27% / 1) 30%, hsl(298deg 100% 20.87%) 39%, hsl(318, 100%, 33%) 46%, hsl(337, 100%, 41%) 54%, hsl(357, 100%, 40%) 61%, hsl(224.7deg 100% 56.06%) 69%, hsl(239.54deg 100% 60.45%) 79%, hsl(226.69deg 96.73% 47.63%) 100%);
+  
+      &:hover{
+        background-image: linear-gradient(45deg, hsl(67.89deg 100% 50%) 0%, hsl(309.25deg 42.47% 48.08%) 21%, hsl(200 100% 27% / 1) 30%, hsl(298deg 100% 20.87%) 39%, hsl(318, 100%, 33%) 46%, hsl(337, 100%, 41%) 54%, hsl(357, 100%, 40%) 61%, hsl(224.7deg 100% 56.06%) 69%, hsl(239.54deg 100% 60.45%) 79%, hsl(226.69deg 96.73% 47.63%) 100%);
+      }
+    }
+    .linkdin{
+      background: #007AB5;
+    }
+    .twiter{
+      background: #000000;
+    }
+    .vimeo{
+      background: #1E4FAD;
+    }
+    .youtube{
+      background: #FD3832;
+    }
+    .pinterest{
+      background: #E02A2F;
+    }
+  }
+  
+}
+
+
+
+
+
+
 .calendar,
 .colud-sun{
   color: var(--#{$prefix}white);

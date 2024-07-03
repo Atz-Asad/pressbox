@@ -140,6 +140,7 @@
     .blockquote-title{
         padding-left: 0;
         color: var(--#{$prefix}meta-color);
+        font-style: italic;
         &::before{
             content: none;
         }

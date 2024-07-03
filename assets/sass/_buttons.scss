@@ -20,11 +20,6 @@
 .btn-link{
    --#{$prefix}btn-font-weight: #{$btn-font-weight};
 }
-// .btn-sm{
-//    --#{$prefix}btn-hover-color: var(--#{$prefix}primary);
-//    --#{$prefix}btn-border-color: var(--#{$prefix}primary);
-//    --#{$prefix}btn-hover-border-color: var(--#{$prefix}primary);
-// }
 .btn-sm-2{
    --#{$prefix}btn-hover-color: var(--#{$prefix}white);
    --#{$prefix}btn-border-color: var(--#{$prefix}primary);
@@ -52,6 +47,10 @@
    --#{$prefix}btn-boder:  var(--#{$prefix}white);
    --#{$prefix}btn-color: var(--#{$prefix}primary);
    --#{$prefix}btn-hover-bg: var(--#{$prefix}white);
+}
+
+.border-info{
+   --#{$prefix}border-width: 2px
 }
 
 .slide-btn{
@@ -122,61 +121,6 @@
     }
 }
 
-/* #Progress Back to Top
-================================================== */
-// .progress-wrap {
-// 	position: fixed;
-// 	right: 20px;
-// 	bottom: 20px;
-// 	height: 46px;
-// 	width: 46px;
-// 	cursor: pointer;
-// 	display: block;
-// 	border-radius: 50px;
-// 	z-index: 999999;
-// 	opacity: 0;
-// 	visibility: hidden;
-// 	transform: translateY(15px);
-// 	-webkit-transition: all 200ms linear;
-//    transition: all 200ms linear;
-//    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-//    svg{
-//      fill: rgba(var(--#{$prefix}primary-rgb), 0.82);
-//    }
-// }
-// .progress-wrap:hover{
-//    box-shadow: 0px 0px 15px rgba(var(--#{$prefix}primary-rgb), 0.9);
-// }
-// .progress-wrap.active-progress {
-// 	opacity: 1;
-// 	visibility: visible;
-// 	transform: translateY(0);
-// }
-// .progress-wrap::after {
-// 	position: absolute;
-// 	font-family: "Font Awesome 6 Pro";
-// 	content: "\f062";
-// 	text-align: center;
-// 	line-height: 46px;
-// 	font-size: 18px;
-// 	color: var(--#{$prefix}white);
-// 	left: 0;
-// 	top: 0;
-// 	height: 46px;
-// 	width: 46px;
-// 	cursor: pointer;
-// 	display: block;
-// 	z-index: 1;
-// 	-webkit-transition: all 200ms linear;
-//    transition: all 200ms linear;
-// }
-// .progress-wrap svg.progress-circle path {
-// 	stroke: var(--#{$prefix}heading-color);
-// 	stroke-width: 5;
-// 	box-sizing:border-box;
-// 	-webkit-transition: all 200ms linear;
-//    transition: all 200ms linear;
-// }
 
 .btn-back-to-top{
    position: fixed;

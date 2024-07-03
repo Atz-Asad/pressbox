@@ -430,7 +430,7 @@
     height: 400px;
   }
   .card-body{
-    padding: 40px 60px;
+    padding: 40px 80px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -491,7 +491,7 @@
   .card-style21{
     overflow: hidden;
     width: 660px;
-    height: calc(100% - 65px);
+    height: calc(100% - 60px);
     @include media-breakpoint-down(lg){
       width: 100%;
       height: 370px;
@@ -539,22 +539,7 @@
     }
   }
 }
-.card-style22{
-  .share{
-    height: 24px;
-    width: 24px;
-    color: var(--#{$prefix}white);
-    background: var(--#{$prefix}secondary);
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s;
-    &:hover{
-      background: var(--#{$prefix}primary);
-    }
-  }
-}
+
 .card-style-23{
   position: relative;
   .card-body-inner{
@@ -568,57 +553,6 @@
       padding: 10px;
     }
     
-  }
-  .social{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    a{
-      height: 24px;
-      width: 24px;
-      color: var(--#{$prefix}white);
-      background: var(--#{$prefix}secondary);
-      text-decoration: none;
-      transition: 0.3s;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 12px;
-      &:hover{
-        background: var(--#{$prefix}primary);
-      }
-    }
-    .share{
-      background: var(--#{$prefix}primary);
-    }
-    .facebook{
-      background: #1E4FAD;
-    }
-    .instragram{
-      // background: linear-gradient(to right, #FFC658 0%,#F62B37 24%, #C82091 48%, #C32193 2%, #9E2AA8 10%, #7D31B9 10%, #6337C7 10%, #4E3CD2 20%,  #403FDA 10%,#3841DF 10%, #3542E0 100%);
-      background-image: linear-gradient(45deg, hsl(67.89deg 100% 50%) 0%, hsl(309.25deg 42.47% 48.08%) 21%, hsl(200 100% 27% / 1) 30%, hsl(298deg 100% 20.87%) 39%, hsl(318, 100%, 33%) 46%, hsl(337, 100%, 41%) 54%, hsl(357, 100%, 40%) 61%, hsl(224.7deg 100% 56.06%) 69%, hsl(239.54deg 100% 60.45%) 79%, hsl(226.69deg 96.73% 47.63%) 100%);
-  
-      &:hover{
-        background-image: linear-gradient(45deg, hsl(67.89deg 100% 50%) 0%, hsl(309.25deg 42.47% 48.08%) 21%, hsl(200 100% 27% / 1) 30%, hsl(298deg 100% 20.87%) 39%, hsl(318, 100%, 33%) 46%, hsl(337, 100%, 41%) 54%, hsl(357, 100%, 40%) 61%, hsl(224.7deg 100% 56.06%) 69%, hsl(239.54deg 100% 60.45%) 79%, hsl(226.69deg 96.73% 47.63%) 100%);
-      }
-    }
-    .linkdin{
-      background: #007AB5;
-    }
-    .twiter{
-      background: #000000;
-    }
-    .vimeo{
-      background: #1E4FAD;
-    }
-    .youtube{
-      background: #FD3832;
-    }
-    .pinterest{
-      background: #E02A2F;
-    }
   }
 }
 .card-style-24{
@@ -743,7 +677,66 @@
     }
   }
 }
-
+.card-style-30{
+  position: relative;
+  .card-style31{
+    overflow: hidden;
+    width: 100%;
+    height: 675px;
+    @include media-breakpoint-down(lg){
+      width: 100%;
+      height: 370px;
+    }
+    .card-body-bottom{
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      width: 50%;
+      background: rgba(0, 0, 0, 0.5);
+      transform: translateX(-50%);
+      left: 50%;
+      padding: 20px 50px 75px 50px;
+      @include media-breakpoint-down(xl){
+        width: 60%;
+      }
+      @include media-breakpoint-down(lg){
+        padding: 20px 20px 20px 20px;
+        width: 100%;
+      }
+    }
+  }
+  .card-frame-wrapper{
+    display: flex;
+    gap: 46px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -110px;
+    background: var(--#{$prefix}body-bg);
+    padding: 34px 40px;
+    z-index: 1;
+    max-width: calc(100% - 225px);
+    margin: 0 auto;
+    @include media-breakpoint-down(xxl) {
+      max-width: calc(100% - 150px);
+      bottom: -110px;
+    }
+    @include media-breakpoint-down(xl) {
+      max-width: calc(100% - 50px);
+      gap: 20px;
+      bottom: -90px;
+      padding: 24px 24px;
+    }
+    @include media-breakpoint-down(lg) {
+      position: inherit;
+      bottom: 0;
+      max-width: 100%;
+    }
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+  }
+}
 /*********************************/
 /******** Author list Card ******/
 /**************************^****/

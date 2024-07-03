@@ -21237,8 +21237,8 @@ textarea.form-control-lg {
 /******** global CSS ********/
 /****************************/
 :root {
-  --bs-primary: #ff0000;
-  --bs-primary-rgb: 255, 0, 0;
+  --bs-primary: #0F90E6;
+  --bs-primary-rgb: 15, 144, 230;
   --bs-secondary: #394146;
   --bs-secondary-rgb: 57, 65, 70;
   --bs-body-bg: #FAFAFA;
@@ -21490,6 +21490,72 @@ textarea.form-control-lg {
   background: #E02A2F;
 }
 
+.socials-style-5 {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+.socials-style-5 .share {
+  height: 24px;
+  width: 24px;
+  color: var(--bs-white);
+  background: var(--bs-secondary);
+  text-decoration: none;
+  text-align: center;
+  line-height: 24px;
+  transition: 0.3s;
+}
+.socials-style-5 .share:hover {
+  background: var(--bs-primary);
+}
+.socials-style-5 .social {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  transition: all 0.5s ease;
+}
+.socials-style-5 .social a {
+  height: 24px;
+  width: 24px;
+  color: var(--bs-white);
+  background: var(--bs-secondary);
+  text-decoration: none;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.socials-style-5 .social a:hover {
+  background: var(--bs-primary);
+}
+.socials-style-5 .social .facebook {
+  background: #1E4FAD;
+}
+.socials-style-5 .social .instragram {
+  background-image: linear-gradient(-45deg, hsl(67.89, 100%, 50%) 0%, hsl(309.25, 42.47%, 48.08%) 21%, hsl(200, 100%, 27%) 30%, hsl(298, 100%, 20.87%) 39%, hsl(318, 100%, 33%) 46%, hsl(337, 100%, 41%) 54%, hsl(357, 100%, 40%) 61%, hsl(224.7, 100%, 56.06%) 69%, hsl(239.54, 100%, 60.45%) 79%, hsl(226.69, 96.73%, 47.63%) 100%);
+}
+.socials-style-5 .social .instragram:hover {
+  background-image: linear-gradient(-45deg, hsl(67.89, 100%, 50%) 0%, hsl(309.25, 42.47%, 48.08%) 21%, hsl(200, 100%, 27%) 30%, hsl(298, 100%, 20.87%) 39%, hsl(318, 100%, 33%) 46%, hsl(337, 100%, 41%) 54%, hsl(357, 100%, 40%) 61%, hsl(224.7, 100%, 56.06%) 69%, hsl(239.54, 100%, 60.45%) 79%, hsl(226.69, 96.73%, 47.63%) 100%);
+}
+.socials-style-5 .social .linkdin {
+  background: #007AB5;
+}
+.socials-style-5 .social .twiter {
+  background: #000000;
+}
+.socials-style-5 .social .vimeo {
+  background: #1E4FAD;
+}
+.socials-style-5 .social .youtube {
+  background: #FD3832;
+}
+.socials-style-5 .social .pinterest {
+  background: #E02A2F;
+}
+
 .calendar,
 .colud-sun {
   color: var(--bs-white);
@@ -21667,6 +21733,7 @@ textarea.form-control-lg {
 .blockquote-style-2 .blockquote-title {
   padding-right: 0;
   color: var(--bs-meta-color);
+  font-style: italic;
 }
 .blockquote-style-2 .blockquote-title::before {
   content: none;
@@ -21851,6 +21918,10 @@ textarea.form-control-lg {
   --bs-btn-hover-bg: var(--bs-white);
 }
 
+.border-info {
+  --bs-border-width: 2px ;
+}
+
 .slide-btn {
   color: var(--bs-border-color);
   border: 1px solid var(--bs-border-color);
@@ -21919,8 +21990,6 @@ textarea.form-control-lg {
   margin-right: 2px;
 }
 
-/* #Progress Back to Top
-================================================== */
 .btn-back-to-top {
   position: fixed;
   left: 20px;
@@ -22192,6 +22261,12 @@ form .icon-star {
 .contact-form label {
   color: rgba(var(--bs-heading-color-rgb), 0.7);
 }
+.contact-form .form-control {
+  border: 1px solid var(--bs-border-color);
+}
+.contact-form .form-control:focus {
+  border: 1px solid var(--bs-primary);
+}
 
 .contact-form-wrapper .subtitle {
   color: rgba(var(--bs-heading-color-rgb), 0.82);
@@ -22200,6 +22275,12 @@ form .icon-star {
   color: rgba(var(--bs-heading-color-rgb), 0.82);
 }
 
+.comment-form .form-control {
+  border: 1px solid var(--bs-border-color);
+}
+.comment-form .form-control:focus {
+  border: 1px solid var(--bs-primary);
+}
 .comment-form textarea {
   height: 245px;
 }
@@ -22409,9 +22490,9 @@ form .icon-star {
   max-width: 1000px;
   max-height: 650px;
   position: fixed;
-  top: 0%;
+  bottom: 0%;
   right: 50%;
-  transform: translate(50%, -50%);
+  transform: translate(50%, 50%);
   z-index: 99;
   display: none;
   transition: all 0.5s ease;
@@ -22437,13 +22518,15 @@ form .icon-star {
   height: 35px;
   width: 35px;
   font-size: 12px;
+  border: none;
 }
 .popupads-image-wrapper .close-icon:hover {
   color: var(--bs-white);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .popupads-image-wrapper.show {
-  top: 50%;
+  bottom: 50%;
 }
 
 .live-score .live {
@@ -22649,14 +22732,6 @@ form .icon-star {
 }
 .gallery-image-wrapper .gallery-icon:hover {
   background: var(--bs-primary);
-}
-
-.bx-wrapper {
-  background: transparent !important;
-  border: none;
-  box-shadow: none;
-  height: auto;
-  margin-bottom: 0;
 }
 
 .news-btn {
@@ -23189,16 +23264,6 @@ form .icon-star {
   position: relative;
   z-index: 1;
 }
-.newsletter::after {
-  position: absolute;
-  content: "";
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
 @media (max-width: 575.98px) {
   .newsletter .input-group {
     flex-direction: column;
@@ -23640,7 +23705,7 @@ form .icon-star {
   border-radius: 50%;
 }
 .comment .reply {
-  padding-right: 70px;
+  padding-right: 80px;
 }
 .comment .icons {
   text-decoration: none;
@@ -23652,6 +23717,9 @@ form .icon-star {
 }
 .comment .icons:hover {
   color: var(--bs-primary);
+}
+.comment .comment-reply-btn {
+  padding: 5px 19px;
 }
 
 .instagram-image-wrapper {
@@ -24391,7 +24459,7 @@ form .icon-star {
   }
 }
 .card-style19 .card-body {
-  padding: 40px 60px;
+  padding: 40px 80px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -24454,7 +24522,7 @@ form .icon-star {
 .card-style-20 .card-style21 {
   overflow: hidden;
   width: 660px;
-  height: calc(100% - 65px);
+  height: calc(100% - 60px);
 }
 @media (max-width: 991.98px) {
   .card-style-20 .card-style21 {
@@ -24512,21 +24580,6 @@ form .icon-star {
   }
 }
 
-.card-style22 .share {
-  height: 24px;
-  width: 24px;
-  color: var(--bs-white);
-  background: var(--bs-secondary);
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s;
-}
-.card-style22 .share:hover {
-  background: var(--bs-primary);
-}
-
 .card-style-23 {
   position: relative;
 }
@@ -24542,55 +24595,6 @@ form .icon-star {
   .card-style-23 .card-body-inner {
     padding: 10px;
   }
-}
-.card-style-23 .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.card-style-23 .social a {
-  height: 24px;
-  width: 24px;
-  color: var(--bs-white);
-  background: var(--bs-secondary);
-  text-decoration: none;
-  transition: 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-}
-.card-style-23 .social a:hover {
-  background: var(--bs-primary);
-}
-.card-style-23 .social .share {
-  background: var(--bs-primary);
-}
-.card-style-23 .social .facebook {
-  background: #1E4FAD;
-}
-.card-style-23 .social .instragram {
-  background-image: linear-gradient(-45deg, hsl(67.89, 100%, 50%) 0%, hsl(309.25, 42.47%, 48.08%) 21%, hsl(200, 100%, 27%) 30%, hsl(298, 100%, 20.87%) 39%, hsl(318, 100%, 33%) 46%, hsl(337, 100%, 41%) 54%, hsl(357, 100%, 40%) 61%, hsl(224.7, 100%, 56.06%) 69%, hsl(239.54, 100%, 60.45%) 79%, hsl(226.69, 96.73%, 47.63%) 100%);
-}
-.card-style-23 .social .instragram:hover {
-  background-image: linear-gradient(-45deg, hsl(67.89, 100%, 50%) 0%, hsl(309.25, 42.47%, 48.08%) 21%, hsl(200, 100%, 27%) 30%, hsl(298, 100%, 20.87%) 39%, hsl(318, 100%, 33%) 46%, hsl(337, 100%, 41%) 54%, hsl(357, 100%, 40%) 61%, hsl(224.7, 100%, 56.06%) 69%, hsl(239.54, 100%, 60.45%) 79%, hsl(226.69, 96.73%, 47.63%) 100%);
-}
-.card-style-23 .social .linkdin {
-  background: #007AB5;
-}
-.card-style-23 .social .twiter {
-  background: #000000;
-}
-.card-style-23 .social .vimeo {
-  background: #1E4FAD;
-}
-.card-style-23 .social .youtube {
-  background: #FD3832;
-}
-.card-style-23 .social .pinterest {
-  background: #E02A2F;
 }
 
 .card-style-24 {
@@ -24732,6 +24736,81 @@ form .icon-star {
   .card-style-29 .card-image-wrapper img {
     height: 100%;
     width: 100%;
+  }
+}
+
+.card-style-30 {
+  position: relative;
+}
+.card-style-30 .card-style31 {
+  overflow: hidden;
+  width: 100%;
+  height: 675px;
+}
+@media (max-width: 991.98px) {
+  .card-style-30 .card-style31 {
+    width: 100%;
+    height: 370px;
+  }
+}
+.card-style-30 .card-style31 .card-body-bottom {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  transform: translateX(50%);
+  right: 50%;
+  padding: 20px 50px 75px 50px;
+}
+@media (max-width: 1199.98px) {
+  .card-style-30 .card-style31 .card-body-bottom {
+    width: 60%;
+  }
+}
+@media (max-width: 991.98px) {
+  .card-style-30 .card-style31 .card-body-bottom {
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+  }
+}
+.card-style-30 .card-frame-wrapper {
+  display: flex;
+  gap: 46px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -110px;
+  background: var(--bs-body-bg);
+  padding: 34px 40px;
+  z-index: 1;
+  max-width: calc(100% - 225px);
+  margin: 0 auto;
+}
+@media (max-width: 1399.98px) {
+  .card-style-30 .card-frame-wrapper {
+    max-width: calc(100% - 150px);
+    bottom: -110px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .card-style-30 .card-frame-wrapper {
+    max-width: calc(100% - 50px);
+    gap: 20px;
+    bottom: -90px;
+    padding: 24px 24px;
+  }
+}
+@media (max-width: 991.98px) {
+  .card-style-30 .card-frame-wrapper {
+    position: inherit;
+    bottom: 0;
+    max-width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .card-style-30 .card-frame-wrapper {
+    flex-direction: column;
   }
 }
 

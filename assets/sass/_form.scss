@@ -17,6 +17,12 @@ form{
     label{
         color: rgba(var(--#{$prefix}heading-color-rgb), 0.7);
     }
+    .form-control{
+        border: 1px solid var(--#{$prefix}border-color);
+    }
+    .form-control:focus{
+        border: 1px solid var(--#{$prefix}primary);
+    }
 }
 .contact-form-wrapper{
     .subtitle{
@@ -30,6 +36,12 @@ form{
 
 // comment Form
 .comment-form{
+    .form-control{
+        border: 1px solid var(--#{$prefix}border-color);
+    }
+    .form-control:focus{
+        border: 1px solid var(--#{$prefix}primary);
+    }
     textarea{
         height: 245px;
         @include media-breakpoint-down(md) {

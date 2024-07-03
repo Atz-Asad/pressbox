@@ -64,9 +64,9 @@
   max-width: 1000px;
   max-height: 650px;
   position: fixed;
-  top: 0%;
+  bottom: 0%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50%);
   z-index: 99;
   display: none;
   transition: all 0.5s ease;
@@ -89,14 +89,16 @@
     height: 35px;
     width: 35px;
     font-size: 12px;
+    border: none;
 
     &:hover{
       color: var(--#{$prefix}white);
+      background: rgba(0, 0, 0, 0.7);
     }
   }
 }
 .popupads-image-wrapper.show{
-  top: 50%;
+  bottom: 50%;
 }
 // .Live Score
 .live-score{
@@ -177,11 +179,6 @@
 .list-group-box{
   .list-group-item{
     padding: 13px 20px;
-    //  &:nth-child(even){
-    //   background: rgba(var(--#{$prefix}primary-rgb), .7);
-    //   opacity: var(--#{$prefix}bg-opacity) .5 ;
-      
-    // }
   }
 }
 .list-group{
@@ -304,14 +301,6 @@
     }
     
   }
-}
-// breaking-news css Start
-.bx-wrapper {
-  background: transparent !important;
-  border: none;
-  box-shadow: none;
-  height: auto;
-  margin-bottom: 0;
 }
 .news-btn{
   min-width: 176px;
@@ -788,13 +777,11 @@
 
 // Home 4 Sport Metch
 .sports-match-slider{
-  // position: relative;
   .sports-match-button-prev{
     position: absolute;
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-
   }
   .sports-match-button-next{
     position: absolute;
@@ -822,20 +809,9 @@
 }
 // home 5 Newsletter
 .newsletter{
-  // background: url(../images/cards/newsletter.jpg) no-repeat scroll center center / cover;
   padding: 54px 0;
   position: relative;
   z-index: 1;
-  &::after{
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, .50);
-    z-index: -1;
-  }
   .input-group{
     @include media-breakpoint-down(sm) {
       flex-direction: column;
