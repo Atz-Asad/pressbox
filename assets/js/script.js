@@ -65,52 +65,6 @@
     });
   }
 
-  // Today’s Match slider Home 2 ===========
-  if ($('.breakingnews-slider-3').length > 0) { 
-    var swiper2 = new Swiper(".breakingnews-slider-3", {
-      // spaceBetween: 40,
-      // slidesPerView: 2.8,
-      loop: true,
-      autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
-      },
-      speed:8000,
-      breakpoints: {
-        480:{
-          slidesPerView: 0.6,
-        },
-        575: {
-          slidesPerView: .8,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 1.2,
-          spaceBetween: 30,
-        },
-        992: {
-          slidesPerView: 1.7,
-          
-        },
-        1200: {
-          slidesPerView: 2.1,
-          
-        },
-        1400: {
-          spaceBetween: 20,
-          slidesPerView: 1.3,
-          
-        },
-      },
-    });
-
-    // $('.swiper-slide').hover(function(){
-    //   swiper2.autoplay.stop();
-    // }, function(){
-    //   swiper2.autoplay.start();
-    // });
-  }
-
   // Breaking-news-slider Marquee Slider ===========  
   $(function (){	
     let options = {
@@ -120,7 +74,15 @@
       onComplete: function(){},
     };
     $('.simple-marquee-container').SimpleMarquee(options);
-
+  });
+  $(function (){	
+    let options = {
+      padding: 40,
+      duration: 100000, // duration in milliseconds
+      autostart: true,
+      onComplete: function(){},
+    };
+    $('.simple-marquee-container').SimpleMarquee(options);
   });
   //========== breaking-news-slider 2 ======== swiper slider
   if ($('.breaking-news-slider-2').length > 0) { 
@@ -448,7 +410,7 @@
   }
   //============== Ads Pop up ==========
 
-  //============== Scroll back to top ==========
+  //============== back to top ==========
   if ($('.btn-back-to-top').length > 0) {
     document.addEventListener("DOMContentLoaded", function() {
       const backtotop = document.querySelector('.btn-back-to-top');
@@ -473,10 +435,8 @@
 
   // social icon hover effect 
   if ($('.share').length > 0) {
-
     const shareIcon = document.querySelector(".share");
     const social = document.querySelector(".social");
-    
     shareIcon.addEventListener("mouseover", () => {
       social.style.display = "flex";
       shareIcon.style.display = "none";
@@ -486,7 +446,6 @@
       shareIcon.style.display = "block";
     });
   }
-
 
   // odometer CountDown
   if ($('.odometer').length > 0) {

@@ -325,17 +325,7 @@
     padding: 6px 0;
     transition-timing-function: linear !important;
   }
-  .marquee-content-items li::after{
-    background: var(--#{$prefix}heading-color);
-    position: absolute;
-    content: "";
-    left: -30px;
-    top: 14px;
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    margin:0 1em;
-  }
+  
   .marquee-sibling{
     height: 100%;
     width: 176px;
@@ -380,17 +370,30 @@
   font-size: 18px;
   line-height: 1.3;
   margin-right: 30px;
+
+  &::after{
+    background: var(--#{$prefix}heading-color);
+    position: absolute;
+    content: "";
+    left: -30px;
+    top: 14px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    margin:0 1em;
+  }
   a{
     text-decoration: none;
     color: var(--#{$prefix}heading-color);
   }
+  
 }
 .breaking-news-text-style-2{
   font-size: 14px;
   font-weight: 400;
   line-height: 1.3;
 }
-// breaking-news css End
+
 .breakingnews-slider-style-2{
   position: relative;
   .swiper-slide.breaking-news-slider-item {
@@ -433,6 +436,8 @@
     }
   }
 }
+// breaking-news css End
+
 // home 2 swiper slider
 .breakingnews-slider-style-3{
   .breakingnews-slider-3{
@@ -443,8 +448,8 @@
     &::after{
       position: absolute;
       content: "";
-      right: -3px;
-      top: 12px;
+      right: -4px;
+      top: 50%;  
       height: 2px;
       width: 10px;
       background: var(--#{$prefix}heading-color);
@@ -457,19 +462,21 @@
   }
   .time{
     color: rgba(var(--#{$prefix}heading-color-rgb), 0.82);
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
   }
   .single-item{
     position: relative;
+    padding: 0 45px 0px 0px;
     &::before{
-    position: absolute;
+      position: absolute;
       content: "";
       left: -20px;
-      top: 10px;
+      top: 50%;
+      transform: translateY(-50%);
       height: 10px;
       width: 10px;
-      background: #0F90E6;
+      background: var(--#{$prefix}primary);
       border-radius: 50%;
     }
   }
@@ -479,6 +486,18 @@
   @media only screen and (max-width: 480px) {
     display: none;
   }
+  .simple-marquee-container .marquee-content-items li:after{
+    content:none;
+  }
+  .marquee-content-items{
+    height: 50px;
+    font-family: var(--#{$prefix}body-font);
+    padding: 6px 0;
+    transition-timing-function: linear !important;
+  }
+}
+.simple-marquee-container *{
+  font-family: var(--#{$prefix}body-font);
 }
 // home - 2 video-slider-style-2
 .video-slider-style-2{
