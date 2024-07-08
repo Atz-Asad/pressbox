@@ -25322,7 +25322,6 @@ form .icon-star {
 .hero-landing {
   padding-bottom: 173px;
   background: url(../images/landing-page/hero.jpg) no-repeat scroll center center/cover;
-  position: relative;
 }
 .hero-landing h1, .hero-landing .h1 {
   line-height: 1.5;
