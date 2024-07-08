@@ -17,7 +17,7 @@
 }
 // Card meta
 .card-meta{
-  color: rgba(var(--#{$prefix}body-color-rgb), .9);
+  color: var(--#{$prefix}meta-color);
   a{
     text-decoration: none;
     color: currentColor;
@@ -180,6 +180,9 @@
     right: 0;
     z-index: 1;
     width: 100%;
+  }
+  img{
+    object-fit: cover;
   }
 }
 // Card style 9
@@ -896,6 +899,8 @@
     overflow: hidden;
     margin-right: auto;
     margin-left: auto;
+    border: 2px solid var(--#{$prefix}border-color);
+    padding: 5px;
     img{
       height: 100%;
       width: 100%;
@@ -976,7 +981,7 @@
     border-radius: 50%;
     overflow: hidden;
     padding: 40px;
-    border: 1px solid rgba(var(--#{$prefix}primary-rgb), 1);;
+    border: 2px solid rgba(var(--#{$prefix}primary-rgb), 1);;
     img{
       height: 100%;
       width: 100%;

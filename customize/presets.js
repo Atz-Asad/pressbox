@@ -5,10 +5,10 @@ const pressboxPresets = [
             primaryrgb: "#0F90E6", 
             secondary: "#394146", 
             secondaryrgb: "#394146", 
-            heading: "#202427",
-            headingrgb: "#202427",
-            body: "#394146", 
-            bodyrgb: "#394146",  
+            // heading: "#202427",
+            // headingrgb: "#202427",
+            // body: "#394146", 
+            // bodyrgb: "#394146",  
         }
     },
     
@@ -18,10 +18,10 @@ const pressboxPresets = [
             primaryrgb: "#ff0000", 
             secondary: "#394146", 
             secondaryrgb: "#394146",
-            heading: "#202427",
-            headingrgb: "#202427", 
-            body: "#000000", 
-            bodyrgb: "#000000",
+            // heading: "#202427",
+            // headingrgb: "#202427", 
+            // body: "#000000", 
+            // bodyrgb: "#000000",
         },
     },
     
@@ -31,34 +31,34 @@ const pressboxPresets = [
             primaryrgb: "#47A992", 
             secondary: "#394146", 
             secondaryrgb: "#394146",
-            heading: "#202427",
-            headingrgb: "#202427", 
-            body: "#482121", 
-            bodyrgb: "#482121", 
+            // heading: "#202427",
+            // headingrgb: "#202427", 
+            // body: "#482121", 
+            // bodyrgb: "#482121", 
         }
     },
     {
         'preset3': { 
             primary: "#9f0592", 
             primaryrgb: "#9f0592", 
-            secondary: "#394146", 
-            secondaryrgb: "#394146",
-            heading: "#202427",
-            headingrgb: "#202427", 
-            body: "#000000", 
-            bodyrgb: "#000000", 
+            secondary: "#3D256A", 
+            secondaryrgb: "#3D256A",
+            // heading: "#202427",
+            // headingrgb: "#202427", 
+            // body: "#000000", 
+            // bodyrgb: "#000000", 
         }
     },
     {
         'preset4': { 
-            primary: "#BABD00", 
-            primaryrgb: "#BABD00", 
-            secondary: "#394146", 
-            secondaryrgb: "#394146",
-            heading: "#202427",
-            headingrgb: "#202427", 
-            body: "#483434", 
-            bodyrgb: "#483434", 
+            primary: "#6F700F", 
+            primaryrgb: "#6F700F", 
+            secondary: "#0E2C67", 
+            secondaryrgb: "#0E2C67",
+            // heading: "#202427",
+            // headingrgb: "#202427", 
+            // body: "#483434", 
+            // bodyrgb: "#483434", 
         }
     },
     {
@@ -315,7 +315,6 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault();
             const targetId = this.getAttribute('data-copy');
             const textarea = document.getElementById(targetId);
-
             if (textarea) {
                 textarea.select();
             }
@@ -325,7 +324,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 $(document).on("#al_reset","click",function(){
     $("#customizer-form").reset();
-    console.log(true);
+    // console.log(true);
 });
 
 function resetButtonEve (){
@@ -336,5 +335,5 @@ function resetButtonEve (){
     loadPreset('preset3')
     loadPreset('preset4')
     loadPreset('default')
-    console.log($("#customizer-form"));
+    // console.log($("#customizer-form"));
 }

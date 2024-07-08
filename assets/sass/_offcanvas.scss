@@ -49,7 +49,8 @@
             left: inherit;
         }
     }
-    background-color:  var(--#{$prefix}body-bg);
+    background-color: var(--#{$prefix}body-bg);
+    width: 412px;
 }
 
 .offcanvas-body::-webkit-scrollbar {

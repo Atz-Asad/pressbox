@@ -20,12 +20,13 @@
 .btn-link{
    --#{$prefix}btn-font-weight: #{$btn-font-weight};
 }
-.btn-sm-2{
-   --#{$prefix}btn-hover-color: var(--#{$prefix}white);
-   --#{$prefix}btn-border-color: var(--#{$prefix}primary);
-   --#{$prefix}btn-hover-border-color: var(--#{$prefix}primary);
-   --#{$prefix}btn-hover-bg: var(--#{$prefix}primary);
-}
+// .btn-sm-2{
+//    --#{$prefix}btn-hover-color: var(--#{$prefix}white);
+//    --#{$prefix}btn-border-color: var(--#{$prefix}primary);
+//    --#{$prefix}btn-hover-border-color: var(--#{$prefix}primary);
+//    --#{$prefix}btn-hover-bg: var(--#{$prefix}primary);
+//    --#{$prefix}btn-hover-border-color: var(--#{$prefix}primary);
+// }
 .btn-secondary{
    --#{$prefix}btn-bg: var(--#{$prefix}secondary);
    --#{$prefix}btn-border-color: var(--#{$prefix}secondary);
@@ -40,7 +41,9 @@
    --#{$prefix}btn-hover-bg: transparent;
    --#{$prefix}btn-hover-border-color: var(--#{$prefix}white);
    --#{$prefix}btn-hover-color: var(--#{$prefix}white);
-   --#{$prefix}btn-active-bg: var(--#{$prefix}white);
+   --#{$prefix}btn-active-bg: transparent;
+   --#{$prefix}btn-active-color: var(--#{$prefix}white);
+   --#{$prefix}btn-active-border-color: var(--#{$prefix}white);
 }
 .btn-outline-light{
    --#{$prefix}btn-bg: transparent;
@@ -56,14 +59,15 @@
 .slide-btn{
    color: var(--#{$prefix}border-color);
    border: 1px solid var(--#{$prefix}border-color);
-   font-size: 14px;
-   height: 25px;
-   width: 25px;
+   font-size: 12px;
+   height: 22px;
+   width: 22px;
    display: flex;
    justify-content: center;
    align-items: center;
    border-radius: 4px;
-   transition: all 0.3s ease ;
+   transition: all 0.3s ease;
+   font-weight: 400;
    &:hover{
       background: var(--#{$prefix}primary);
       color: var(--#{$prefix}white);
@@ -139,6 +143,10 @@
    text-decoration: none;
    visibility: hidden;
    opacity: 0;
+   &:hover{
+      background: rgba(var(--#{$prefix}primary-rgb), 1);
+      box-shadow: 0px 0px 15px rgba(var(--bs-primary-rgb), 0.9);
+   }
    i{
       font-size: 8px;
       color: var(--#{$prefix}white);
@@ -177,14 +185,13 @@
    }
    .dropdown-menu{
       --#{$prefix}dropdown-min-width: 130px;
-      background:rgba(var(--#{$prefix}body-bg-rgb), 0.2);
+      background: rgba(var(--#{$prefix}body-bg-rgb), 0.2);
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
       .dropdown-item{
          --#{$prefix}dropdown-item-padding-y: 6.5px;
          --#{$prefix}dropdown-item-padding-x: 10px;
          background:rgba(var(--#{$prefix}body-bg-rgb), 0.2);
          color: var(--#{$prefix}heading-color);
-         
          font-size: 14px;
          font-weight: 400;
          transition: all 0.4s ease;
@@ -213,7 +220,6 @@
          }
       }
    }
-
    .dropdown-menu.show{
       display: flex;
       align-items: center;

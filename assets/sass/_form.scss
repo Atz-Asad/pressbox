@@ -50,3 +50,11 @@ form{
         }
     }
 }
+.form-check .form-check-input {
+    border-radius: 0;
+}
+.form-check-input:checked {
+    background-color: var(--#{$prefix}primary);
+    border-color: var(--#{$prefix}primary);
+    border-radius: 0;
+}

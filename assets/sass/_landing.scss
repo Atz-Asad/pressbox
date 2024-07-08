@@ -1,0 +1,131 @@
+/******************************/
+/******** landing sCSS *******/
+/****************************/
+
+
+.header-landing{
+    background: transparent;
+    padding: 45px 0;
+    position: relative;
+    z-index: 11;
+    transition: 0.4s;
+    .nav-link {
+        color: var(--#{$prefix}white);
+    }
+}
+// .landingpage-menu-offcanvas.show{
+//     .nav-link {
+//         // color: rgba(var(--#{$prefix}heading-rgb), 0.9);
+//     }
+// }
+.header-landing.sticky {
+    width: 100%;
+    position: fixed;
+    padding: 20px 0;
+    top: 0;
+    z-index: 1000; 
+    background: var(--#{$prefix}primary)
+}
+
+.hero-landing{
+    padding-bottom: 173px;
+    background: url(../images/landing-page/hero.jpg) no-repeat scroll center center / cover;
+    position: relative;
+    h1{
+        line-height: 1.5;
+        span{
+            color: #80C2FF;
+        }
+    }
+    .description{
+        color: #80C2FF;
+        font-size: 20px;
+        font-weight: 600;
+        max-width: 800px;
+    }
+    .hero-inner{
+        padding-top: 173px;
+    }
+}
+
+
+.demo-image{
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    @media only screen and (max-width: 400px) {
+        height: 380px;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease;
+    }
+    .view_demo_btn {
+        position: absolute;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+    &:hover::before{
+        opacity: 1;
+        visibility: visible;
+    }
+    &:hover .view_demo_btn{
+        opacity: 1;
+        visibility: visible;
+        top: 50%;
+    }
+}
+
+// .demo-image-hover-style-1{
+//     background-position: top;
+//     transition: all 2.5s ease;
+//     background-size: 100%;
+//     background-repeat: no-repeat;
+//     &:hover{
+//         background-position: bottom;
+//     }
+// }
+.responsive-device,
+.footer-landing{
+    background: linear-gradient(to right, #203788 0%, #0F90E6 100%);
+}
+
+
+
+
+.feature-item{
+    border: 20px solid #EBEBEF;
+    height: 360px;
+    padding: 20px;
+    &:hover{
+        img{
+            transform: scale(1.07);
+        }
+        .feature-name{
+            color: var(--#{$prefix}primary);
+        }
+    }
+    .feature-name{
+        transition: all .4s ease-in-out;;
+    }
+    img{
+        transition: transform .4s ease-in-out;
+    }
+}
+
